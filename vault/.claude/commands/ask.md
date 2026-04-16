@@ -1,68 +1,65 @@
-You are a wiki-grounded assistant for a personal second brain.
-Read CLAUDE.md before doing anything else.
-
-The user's question: $ARGUMENTS
-
+---
+description: Answer questions grounded in wiki notes, with source citations and gap detection
+allowed-tools: Bash, Read, Write, Edit, Glob, Grep
+model: sonnet
+argument-hint: [your question, optionally prefixed with --tag <tag>]
 ---
 
-Step 1 — RETRIEVE
+# Ask
 
-Read meta/index.md to get all wiki note IDs, titles, tags, and aliases.
-Also read meta/alias-table.json if it exists.
+## Purpose
 
-Tokenize the question into candidate keywords. Match against:
-  1. Exact tag match (question term == a wiki tag)
-  2. Alias match (question term appears in any note's aliases list)
-  3. Title substring match
-  4. If fewer than 3 notes matched above, do a full-text grep of wiki/ bodies.
+Answer the user's question using wiki notes as the primary source. Retrieves
+the most relevant notes, reasons over them, cites every note used, logs the
+Q&A, and flags any topics not covered by the wiki as gaps to address.
 
-Load the full body of the top 8 most relevant matching wiki notes.
+## Variables
 
-If zero notes match ANY method, skip to Step 2 with an empty retrieval set.
+QUESTION: $ARGUMENTS
+INDEX_FILE: meta/index.md
+ALIAS_FILE: meta/alias-table.json
+QA_LOG: meta/qa-log.md
+WIKI_DIR: wiki/
+MAX_NOTES: 8
 
----
+## Instructions
 
-Step 2 — REASON
+- Read CLAUDE.md before doing anything else.
+- Use wiki notes as PRIMARY source — quote or paraphrase before drawing on training knowledge.
+- Never contradict a wiki note without explicitly flagging the conflict.
+- If no notes are retrieved, answer from general knowledge and state so clearly.
+- Do NOT write to wiki/ or inbox/ unless the user explicitly says "save this" or "approve".
+- Only write automatically to meta/qa-log.md.
+- Optional `--tag <tag>` prefix: filter retrieval to notes matching that tag only.
 
-Answer the question. Rules:
-  a. Use retrieved wiki notes as your PRIMARY source.
-  b. Quote or paraphrase from wiki notes before adding knowledge from training.
-  c. Never contradict a wiki note without explicitly flagging the conflict:
-     "Your question assumes X, but [[note-id]] says Y. Which is correct?"
-  d. If no notes were retrieved, answer from general knowledge and state clearly:
-     "No wiki notes found on this topic — answering from general knowledge."
+## Workflow
 
----
+1. Read CLAUDE.md to confirm invariants.
+2. Parse argument: if it starts with `--tag <tag>`, extract the tag and the remainder as the question; otherwise use full argument as question.
+3. **Retrieve** — read meta/index.md and meta/alias-table.json. Tokenize the question into keywords. Match against (in order):
+   a. Exact tag match
+   b. Alias match (term appears in any note's aliases list)
+   c. Title substring match
+   d. If fewer than 3 notes matched, full-text grep of wiki/ bodies
+   If `--tag` was provided, restrict all matches to notes with that tag.
+   Load the full body of the top 8 most relevant matching notes.
+4. **Reason** — answer the question using the retrieved notes. Flag any conflict between retrieved notes and training knowledge explicitly.
+5. **Cite** — end the answer with a `## Sources` section listing every wiki note used with a one-sentence relevance note. If none used, write `(none — answered from general knowledge)`.
+6. **Log** — append one line to meta/qa-log.md:
+   `| YYYY-MM-DD | "<question truncated to 80 chars>" | [id1, id2, ...] | no |`
+7. **Gap check** — if any part relied on general knowledge, append a `## Gaps` section with one bullet per missing topic suggesting `/ingest` with a source file.
 
-Step 3 — CITE
+## Report
 
-End your answer with a ## Sources section listing every wiki note used:
-  [[note-id]] — one sentence explaining why it was relevant
+The answer itself is the report. Structure:
 
-If no wiki notes were used, write:
-  ## Sources
-  (none — answered from general knowledge)
+```
+[Answer grounded in wiki notes]
 
----
+## Sources
+- [[note-id]] — one sentence on why it was relevant
+- ...
 
-Step 4 — LOG
-
-Append exactly one line to meta/qa-log.md in this format:
-  | YYYY-MM-DD | "<question truncated to 80 chars>" | [id1, id2, ...] | no |
-
----
-
-Step 5 — GAP CHECK
-
-If any part of the answer relied on general knowledge (not wiki notes), append:
-
-## Gaps
-- <topic> — consider running `/ingest` with a source file on this topic.
-
-(One bullet per missing topic. Omit this section entirely if wiki notes
-fully covered the question.)
-
----
-
-IMPORTANT: Do NOT write to wiki/ or inbox/ unless the user explicitly says
-"save this" or "approve". Only log to meta/qa-log.md automatically.
+## Gaps  (omit if fully covered by wiki)
+- <topic> — consider running /ingest with a source file on this topic
+```

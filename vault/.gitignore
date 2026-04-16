@@ -1,0 +1,14 @@
+# Obsidian workspace state (not portable)
+.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/workspaces.json
+
+# Keep plugin configs but ignore cache
+.obsidian/cache
+
+# Optional: uncomment to keep conversations private
+# conversations/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(**)",
+      "Write(vault/inbox/**)",
+      "Write(vault/meta/**)",
+      "Write(vault/conversations/**)",
+      "Edit(vault/inbox/**)",
+      "Edit(vault/meta/**)"
+    ],
+    "deny": [
+      "Write(vault/wiki/**)",
+      "Write(vault/qa/**)",
+      "Edit(vault/wiki/**)",
+      "Edit(vault/qa/**)"
+    ]
+  }
+}

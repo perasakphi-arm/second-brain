@@ -43,7 +43,12 @@ INDEX_FILE: meta/index.md
    - If validation fails: report errors and STOP.
 5. Determine destination:
    - type: `qa` → `qa/<slug>-<YYYYMMDD>.md`
-   - all others → `wiki/<type>/<slug>.md`
+   - tags include `hand-review` → `wiki/hands/<slug>.md`
+   - tags include `villain` or `profiling` → `wiki/villains/<slug>.md`
+   - tags include `population` or `pool-read` or `recreational-player` → `wiki/population/<slug>.md`
+   - tags include `wakko` or `tony` or (`strategy` AND NOT `hand-review`) or `study` or `methodology` → `wiki/frameworks/<slug>.md`
+   - tags include `spot` or `board-texture` or `pfr` or `pfc` or `3bp` or `srp` (AND NOT villain/hand-review tags) → `wiki/spots/<slug>.md`
+   - all others → `wiki/concepts/<slug>.md`
 6. Check if destination already exists:
    - YES → show a diff of what will change. Ask the user to confirm before merging. Merge by appending new sections; never delete existing content.
    - NO → proceed to create.

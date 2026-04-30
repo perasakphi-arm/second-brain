@@ -21,11 +21,29 @@ trustworthy. There are no exceptions.
 |--------|---------|
 | `raw/` | User-dropped unstructured Markdown — never modified by Claude |
 | `inbox/` | Claude drafts awaiting user review — filenames start with `_draft-` |
-| `wiki/` | Canonical, linked knowledge base — write only via `/approve` |
+| `wiki/frameworks/` | Coaching philosophy and general poker theory (Wakko, Tony) |
+| `wiki/spots/` | Spot-specific strategy (board × position × pot type) |
+| `wiki/population/` | Pool-wide reads — patterns true of the average opponent |
+| `wiki/villains/` | Individual villain profiles — one note per known opponent |
+| `wiki/hands/` | Atomic hand-review notes — one note per reviewed hand |
+| `wiki/concepts/` | General poker concepts not covered by the above folders |
 | `qa/` | Approved Q&A pairs — write only via `/approve` after `/ask` |
 | `meta/` | Auto-generated indexes, logs, hashes — Claude may update freely |
 | `conversations/` | Optional chat transcripts — archival only, never linked as facts |
-| `templates/` | Obsidian note templates — do not modify |
+| `templates/` | Obsidian note templates — do not modify existing; new templates may be added |
+
+### Folder Routing for Drafts
+
+When creating inbox drafts, choose the target wiki folder based on tags:
+
+| Tags on draft | Target folder after `/approve` |
+|---------------|-------------------------------|
+| `wakko`, `tony`, `strategy`, `study`, `methodology` | `wiki/frameworks/` |
+| `spot`, `board-texture`, `pfr`, `pfc`, `3bp`, `srp` (without villain tag) | `wiki/spots/` |
+| `population`, `pool-read`, `recreational-player` | `wiki/population/` |
+| `villain`, `profiling` | `wiki/villains/` |
+| `hand-review` | `wiki/hands/` |
+| anything else | `wiki/concepts/` |
 
 ---
 

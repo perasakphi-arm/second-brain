@@ -105,3 +105,52 @@ Flop J86 เป็น J87 จะทำให้ Strategy เปลี่ยน�
 เป็นซึ่ง Wakko อยากให้ study และจด Note เกี่ยวกับ Cause effect relation ship ไว้เป็น knowledge ของเรา
 
 ![[Pasted image 20260501154311.png]]
+ต้องการดูว่า Input แต่ละอันมี Cause effect relation ไปยัง strategy ยังไง
+
+![[Pasted image 20260502203330.png]]
+และเมื่อเราเข้าใจ Cause effect และ Why จึงทำให้เราหา Exception เจอ และ adjust ได้ถูกต้อง
+เพราะ Wakko คิดว่า Poker ไม่ใช่ static game
+
+![[Pasted image 20260502203427.png]]
+ถ้าเราไม่เข้าใจ Why เราจะไม่สามารถหา Exception ของ Spot นั้นๆเจอ เพราะคนที่ study strategy base on what และไม่ได้พยายามทำความเข้าใจ Ingredient ที่เปลี่ยน จะไม่ได้เข้าใจถึง accomplish ของ Hand หรือ desire outcome ของ strategy ที่กำลังทำ 
+
+ตัวอย่าง
+![[Pasted image 20260502203645.png]]
+Wakko Question เมื่อ study
+
+ทำไมเราถึง bet frequency น้อยลง เมื่อเปรียบเทียบ 100 bb vs 20 bb
+Sizing ลดลง
+Frequency ลดลง
+
+และ Hand ที่ check บ่อยเมื่อเทียบกับ Deep stack คือ
+- Draw
+Why ? เพื่อหาคำตอบเราเลยต้องไปดู action ถัดไปเมื่อเรา bet และ action เมื่อเรา check
+
+BB response vs small bet
+![[Pasted image 20260502203843.png]]
+Deep stack (High SPR) ไม่ได้ aggressive check raise
+Short stack (low SPR) check raise aggressive ด้วย Hand พวก top pair
+
+เพราะ solver look a head ว่ามีอะไร จะเกิดขึ้นบ้าง และต้องการ realize equity
+
+![[Pasted image 20260502204038.png]]
+Key คือ EV ของเราที่เห็นมัน ขึ้นกับ Response ของ Opponent 
+
+Example
+
+![[Pasted image 20260502204122.png]]
+เป็นตัวอย่างที่เทียบให้เห็น Cause effect relation ship 
+เมื่อ BB check เยอะ หรือ น้อยลง มีผลกับ IP Strategy คือ
+- Low check raise ทำให้ IP cbet เยอะขึ้นได้
+- High check raise IP จะลด cbet frequency ลง
+
+ซึ่งเราสามารถเอาไปประยุกต์ใช้กับ Spot อื่นๆ ได้เช่น
+4bp Low SPR ซึ่งเราอาจจะเจอ check raise aggressive เพราะฉะนั้นถ้าเรามี draw แล้วเป็น IP เราจะ check back เพื่อ realize equity
+
+![[Pasted image 20260502204458.png]]
+ใน Real game , Ingredient มันจะแตกต่างจาก GTO เพราะว่า เรื่อง range หรือ action เพราะฉะนั้นการเล่น GTO เลยไม่สร้าง Highest EV
+
+![[Pasted image 20260502204658.png]]
+มีเรื่องที่ Wakko เคยได้ยิน ว่า Population over fold หรือ Under check raise เราเลย Cbet small high frequency Wakko คิดว่ามีเรื่องต้องคุยต่อ เพื่อให้เกิดความเข้าใจ
+
+ซึ่งเหตุเรื่อง under check raise หรือ Over fold และทำให้เรา study แค่ simplify flop range bet ไม่ใช่เหตุผล แต่เรายังต้อง study theory concept จาก GTO เพื่อมาประยุกต์ใช้กับ real game

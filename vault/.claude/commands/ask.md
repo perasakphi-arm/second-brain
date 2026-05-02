@@ -31,6 +31,8 @@ MAX_NOTES: 8
 - Do NOT write to wiki/ or inbox/ unless the user explicitly says "save this" or "approve".
 - Only write automatically to meta/qa-log.md.
 - Optional `--tag <tag>` prefix: filter retrieval to notes matching that tag only.
+- For strategy/coaching questions, prioritize retrieval of notes that contain reusable in-game decision patterns (trigger -> reasoning -> action), not just matching terminology.
+- Treat "atomic concept" as a pattern visible in real hand/board situations. Prefer notes with concrete examples over abstract summaries when both are available.
 
 ## Workflow
 
@@ -42,8 +44,9 @@ MAX_NOTES: 8
    c. Title substring match
    d. If fewer than 3 notes matched, full-text grep of wiki/ bodies
    If `--tag` was provided, restrict all matches to notes with that tag.
+   Prefer ranking notes higher when they include spot-trigger language, thought-process steps, and action rules tied to hand/board contexts.
    Load the full body of the top 8 most relevant matching notes.
-4. **Reason** — answer the question using the retrieved notes. Flag any conflict between retrieved notes and training knowledge explicitly.
+4. **Reason** — answer the question using the retrieved notes. Ground explanations in real in-game spots and recurring patterns from the notes, then generalize into atomic concept form only when supported by those examples. Flag any conflict between retrieved notes and training knowledge explicitly.
 5. **Cite** — end the answer with a `## Sources` section listing every wiki note used with a one-sentence relevance note. If none used, write `(none — answered from general knowledge)`.
 6. **Log** — append one line to meta/qa-log.md:
    `| YYYY-MM-DD | "<question truncated to 80 chars>" | [id1, id2, ...] | no |`

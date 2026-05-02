@@ -11,6 +11,8 @@
 - [[concept/three-layers-poker-strategy]] — Three Layers of Poker Strategy (poker, strategy, gto, exploit, layers, c-game, a-game, b-game, wakko)
 - [[concept/poker-study-methodology]] — Poker Study Methodology (poker, study, methodology, spots, streets, gto, wakko)
 - [[concept/mtt-vs-cash-poker-is-poker]] — MTT vs Cash — Poker Is Poker (Wakko) (poker, mtt, cash-game, strategy, ingredients, rake, antes, spr, gto, wakko)
+- [[concept/why-mindset-reverse-engineering]] — Why Mindset — Reverse Engineering Poker Strategy (Wakko) (wakko, study, methodology, reverse-engineering, ingredients, cause-effect, why-mindset, frameworks)
+- [[concept/ingredient-cause-effect-analysis]] — Ingredient Cause-Effect Analysis — SPR, Range, and Board (Wakko) (wakko, study, ingredients, cause-effect, spr, range, board-texture, bet-frequency, hand-groups, frameworks)
 
 ## Spots
 
@@ -24,7 +26,6 @@
 
 - [[tasks/master-todo]] — Master To-Do List (task-list, study, todo)
 - [[tasks/session-prep-todo]] — Session Prep — Recurring Checklist (task-list, study, session-prep, methodology)
-- [[tasks/session-todo-20260502-s1]] — Session To-Do — 2026-05-02 Session 1 (task-list, session-todo)
 - [[tasks/3bp-oop-pfr-study-tasks]] — 3BP OOP PFR — Study Task List & Progress Tracker (3bp, oop, pfr, study, methodology, tony, task-list)
 - [[tasks/srp-oop-pfc-bb-defend-study-tasks]] — SRP OOP PFC (BB Defend) — Study Task List & Progress Tracker (srp, oop, pfc, bb-defend, study, methodology, tony, task-list)
 
@@ -39,6 +40,7 @@
 ## Hands
 
 - [[hand/20260430-fish-utg-3bp-65s-vs-t9o]] — 3BP BU 65s vs Fish UTG T9o (Board 8s6s8c-9s-Js) (poker, hand-review, 3bp, bu, fish, leak-flush-blocker, leak-river-jam)
+- [[hand/20260502-3bp-sb-kqhh-tc9h7h]] — Hand Review — 3BP SB KhQh vs UTG (Tc9h7h-2h-Js) — Slow Play Flush Turn (hand-review, 3bp, sb, utg, flush, slow-play, villain-bluff-no-blocker, blocker, equity-realization, 200nl)
 
 ## Concepts
 
@@ -51,6 +53,12 @@ _(none yet)_
 ## Projects
 
 _(none yet)_
+
+## Sessions
+
+- [[sessions/session-todo-20260502-s1]] — Session To-Do — 2026-05-02 Session 1 (session-todo)
+- [[sessions/session-todo-20260502-s2]] — Session To-Do — 2026-05-02 Session 2 (session-todo)
+- [[sessions/session-todo-20260502-s3]] — Session To-Do — 2026-05-02 Session 3 (session-todo)
 
 ## References
 

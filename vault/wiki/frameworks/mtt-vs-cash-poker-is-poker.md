@@ -8,7 +8,7 @@ sources:
 aliases: [poker is poker, mtt vs cash same, mtt cash same strategy, ingredient-based strategy, poker ingredients, wakko mtt vs cash]
 created: 2026-04-26
 updated: 2026-04-26
-links_out: [concept/poker-strategy-framework, concept/three-layers-poker-strategy]
+links_out: [concept/poker-strategy-framework, concept/three-layers-poker-strategy, concept/why-mindset-reverse-engineering, concept/ingredient-cause-effect-analysis]
 ---
 
 # MTT vs Cash — Poker Is Poker (Wakko)
@@ -39,7 +39,7 @@ The poker education industry is structured around releasing MTT courses OR Cash 
 
 **Wakko's approach:** Use MTT and Cash as *examples* to illustrate which concepts apply in which contexts. Focus on **WHY** rather than WHAT.
 
-> Why mindset = long-term growth. Short-term = focus what. But long-term, understanding WHY allows you to apply the framework to any game (not just NLHE).
+> [[concept/why-mindset-reverse-engineering|Why mindset]] = long-term growth. Short-term = focus what. But long-term, understanding WHY allows you to apply the framework to any game (not just NLHE).
 
 ---
 
@@ -179,3 +179,5 @@ The reason is SPR, not "it's a tournament."
 ## See Also
 - [[concept/poker-strategy-framework|Poker Strategy Framework]] — the foundational framework applied across formats
 - [[concept/three-layers-poker-strategy|Three Layers of Poker Strategy]] — how ingredients affect which strategic layer is viable
+- [[concept/why-mindset-reverse-engineering|Why Mindset]] — the meta-methodology this note's approach is grounded in
+- [[concept/ingredient-cause-effect-analysis|Ingredient Cause-Effect Analysis]] — concrete SPR/range/board experiments that build on this framework

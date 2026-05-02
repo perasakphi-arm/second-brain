@@ -8,7 +8,7 @@ sources:
 aliases: [poker study, how to study poker, study spots, study priority, poker improvement, what to study poker]
 created: 2026-04-19
 updated: 2026-04-19
-links_out: [concept/3bp-oop-pfr-strategy, concept/three-layers-poker-strategy, tasks/3bp-oop-pfr-study-tasks]
+links_out: [concept/3bp-oop-pfr-strategy, concept/three-layers-poker-strategy, tasks/3bp-oop-pfr-study-tasks, concept/why-mindset-reverse-engineering]
 ---
 
 # Poker Study Methodology
@@ -71,7 +71,7 @@ Priority criteria (in order):
 
 Mastering these four spots teaches the underlying poker theory that scales to all other spots. Concepts from PFR IP/OOP and PFC IP/OOP recur everywhere.
 
-**Key**: study with **Zoom In** (deep on the spot) AND **Zoom Out** (understand why, to scale to other spots). Focus on *why* so the knowledge transfers.
+**Key**: study with **Zoom In** (deep on the spot) AND **Zoom Out** (understand why, to scale to other spots). Focus on [[concept/why-mindset-reverse-engineering|*why*]] so the knowledge transfers.
 
 ### Priority 2
 
@@ -147,3 +147,4 @@ Turn is studied holistically in two categories: **Blank Turn** vs **Complete Tur
 ## See Also
 - [[concept/three-layers-poker-strategy|Three Layers of Poker Strategy]] — what the study methodology is building toward
 - [[tasks/3bp-oop-pfr-study-tasks|3BP OOP PFR Study Tasks]] — example of this methodology applied to a specific spot
+- [[concept/why-mindset-reverse-engineering|Why Mindset — Reverse Engineering]] — the deeper Wakko framework for *why* to study spots, not just *what* to study

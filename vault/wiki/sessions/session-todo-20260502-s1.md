@@ -1,8 +1,8 @@
 ---
-id: tasks/session-todo-20260502-s1
+id: sessions/session-todo-20260502-s1
 title: Session To-Do — 2026-05-02 Session 1
 type: concept
-tags: [task-list, session-todo, session-prep]
+tags: [session-todo, session-prep]
 sources:
   - wiki/concepts/pre-session-20260502.md
   - wiki/spots/3bp-oop-pfr-flop-key-mistakes.md
@@ -25,16 +25,16 @@ links_out:
 ## Before Sitting Down
 
 - [x] Run `/session-prep` — leak list generated
-- [ ] Read execution cue above out loud once
-- [ ] Open `wiki/spots/3bp-oop-pfr-flop-key-mistakes.md` — scan Mistake 2 table (30 sec)
+- [x] Read execution cue above out loud once
+- [x] Open `wiki/spots/3bp-oop-pfr-flop-key-mistakes.md` — scan Mistake 2 table (30 sec)
 
 ---
 
 ## During the Session
 
-- [ ] Every 3BP OOP turn decision with set/overpair → apply the cue
-- [ ] Every BB defend flop → run 3-question check (IP over-cbets? Protection? bdfd?)
-- [ ] Flag any hand you're unsure about for post-session review
+- [x] Every 3BP OOP turn decision with set/overpair → apply the cue
+- [x] Every BB defend flop → run 3-question check (IP over-cbets? Protection? bdfd?)
+- [x] Flag any hand you're unsure about for post-session review
 
 ---
 

@@ -78,5 +78,15 @@
     "file": "raw/SRP OOP PFR (BB defend).md",
     "ingested": "2026-05-01",
     "wiki_id": "spot/srp-oop-pfc-bb-defend-flop"
+  },
+  "f09247d86e470061b0d1152d4faf9aaa0218aaf9d7b5452f74614994a9d444ec": {
+    "file": "raw/Focus on Why.md",
+    "ingested": "2026-05-02",
+    "wiki_id": "concept/why-mindset-reverse-engineering"
+  },
+  "d84144d689c67d5720dd87f8c74ca1e80c5dd9c284cd964690b7ed8b0cfdcdb4": {
+    "file": "raw/3BP OOP PFR Review.md",
+    "ingested": "2026-05-02",
+    "wiki_id": "hand/20260502-3bp-sb-kqhh-tc9h7h"
   }
 }

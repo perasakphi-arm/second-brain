@@ -10,7 +10,7 @@ aliases:
   - 3bet pot oop pfr flop errors
 created: 2026-04-30
 updated: 2026-04-30
-links_out: [concept/3bp-oop-pfr-strategy, tasks/3bp-oop-pfr-study-tasks]
+links_out: [concept/3bp-oop-pfr-strategy, tasks/3bp-oop-pfr-study-tasks, hand/20260502-3bp-sb-kqhh-tc9h7h]
 ---
 
 # 3BP OOP PFR — Key Mistakes on the Flop & Turn
@@ -123,3 +123,4 @@ Summarized from Tony coaching session on [[concept/3bp-oop-pfr-strategy|3BP OOP 
 ## See Also
 - [[concept/3bp-oop-pfr-strategy|3BP OOP PFR Strategy]] — the foundational strategy each mistake violates
 - [[tasks/3bp-oop-pfr-study-tasks|3BP OOP PFR Study Tasks]] — structured drills to fix each mistake category
+- [[hand/20260502-3bp-sb-kqhh-tc9h7h|Hand 2026-05-02 KhQh slow play]] — live example of correctly NOT fast-playing value (2nd nut flush, no protection needed; contrast with Mistake 2)

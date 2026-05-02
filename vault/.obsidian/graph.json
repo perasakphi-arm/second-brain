@@ -8,17 +8,10 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "path:wiki  ",
+      "query": "path:wiki/frameworks  ",
       "color": {
         "a": 1,
         "rgb": 14048348
-      }
-    },
-    {
-      "query": "path:wiki/concept  ",
-      "color": {
-        "a": 1,
-        "rgb": 14069084
       }
     }
   ],

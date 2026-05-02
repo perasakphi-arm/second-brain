@@ -17,7 +17,7 @@ Run before sitting down. Fill in the Mistake Tally and Session Notes after the s
 
 COMMAND_ARG: <!-- session number, e.g. "s1" or "s2" — defaults to "s1" -->
 TODAY: <!-- current date YYYY-MM-DD -->
-WIKI_TASKS_DIR: wiki/tasks/
+WIKI_SESSIONS_DIR: wiki/sessions/
 SPOTS_DIR: wiki/spots/
 HANDS_DIR: wiki/hands/
 
@@ -46,8 +46,8 @@ HANDS_DIR: wiki/hands/
    - Same scan as step 2 — rank top 3 by hand count across all spots notes
 
 4. **Build the note**
-   - Filename: `wiki/tasks/session-todo-YYYYMMDD-<session-number>.md`
-   - Frontmatter: id, title, type: concept, tags: [task-list, session-todo, session-prep], sources (spots notes used), aliases, created, updated, links_out
+   - Filename: `wiki/sessions/session-todo-YYYYMMDD-<session-number>.md`
+   - Frontmatter: id, title, type: concept, tags: [session-todo, session-prep], sources (spots notes used), aliases, created, updated, links_out
    - Sections:
      - Focus leak + execution cue (header block)
      - `## Before Sitting Down` — 3 checkboxes: run /session-prep (pre-checked), read cue, scan mistake table
@@ -55,10 +55,10 @@ HANDS_DIR: wiki/hands/
      - `## After the Session` — 4 checkboxes: add flagged hands, update villain profile, check off modules, Mistake Tally table
      - `## Session Notes` — empty block for post-session freewrite
 
-5. **Write directly to `wiki/tasks/`**
+5. **Write directly to `wiki/sessions/`**
 
 6. **Update `meta/index.md`**
-   - Add entry under Tasks section: `- [[tasks/session-todo-YYYYMMDD-<sN>]] — Session To-Do — YYYY-MM-DD Session N (task-list, session-todo)`
+   - Add entry under Sessions section (create section if missing): `- [[sessions/session-todo-YYYYMMDD-<sN>]] — Session To-Do — YYYY-MM-DD Session N (session-todo)`
 
 ## Report
 

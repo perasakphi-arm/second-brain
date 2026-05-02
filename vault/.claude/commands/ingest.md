@@ -28,6 +28,20 @@ PROCESSED_FILE: meta/processed.json
 - If the file is already in processed.json, skip it and report so.
 - Do NOT write to wiki/. Do NOT update meta/processed.json — that is /approve's responsibility.
 - One concept = one draft. If a raw file contains multiple atomic concepts, create one draft per concept.
+- Ground every concept in a real in-game situation from the source note. Never create abstract "theory-only" concepts with no spot context.
+- Prioritize concept extraction from thought process patterns:
+  - Tony classes: board strategy explanations + in-game thought process are primary signals.
+  - Other coaches: in-game thought process is the primary signal.
+- Extract only recurring patterns. A single isolated line should stay as an example, not become its own concept unless the note clearly marks it as a core principle.
+- Treat "atomic concept" as one reusable decision pattern that can be recognized in-game (trigger -> reasoning -> action), not a broad topic.
+- Concept linking rule: when extending an existing concept, link by the same decision pattern in similar game situations (not by similar wording alone). Prefer matching by id/alias plus spot context.
+- Each concept draft must make the pattern visible:
+  - Name the in-game trigger/spot.
+  - Capture the coach's reasoning sequence.
+  - State the resulting action rule.
+  - Include at least one concrete hand/board example from the raw note.
+- If a recurring pattern appears to be a new atomic concept, create a new concept draft for it instead of burying it inside a broader note.
+- Treat names like "Outlive" as examples only. Do not force that exact concept name; find and extract whichever recurring pattern is actually present in the current raw notes.
 - Image handling: carry Obsidian image embeds (![[filename.png]]) into the draft at the section where they appeared. Preserve the original ![[filename]] syntax exactly — do not alter paths. Only include images directly relevant to the concept being drafted.
 
 ## Workflow
@@ -37,11 +51,16 @@ PROCESSED_FILE: meta/processed.json
 3. For each file to process:
    a. Read the file.
    b. Read meta/index.md to know existing wiki titles and aliases.
-   c. Identify atomic concepts. For each concept decide: extends an existing wiki note (match by id or alias) OR is a new concept requiring a new note.
+   c. Identify atomic concepts by scanning for repeated in-game decision patterns (trigger -> reasoning -> action), especially in board-strategy breakdowns and thought-process narration. For each concept decide: extends an existing wiki note (match by id/alias + spot context) OR is a new concept requiring a new note.
    d. Write one draft per concept to inbox/ with filename: `_draft-<slug>-<YYYYMMDD-HHMM>.md`
       - Use the full frontmatter contract from CLAUDE.md.
       - Set sources to include the raw file path.
       - Carry over relevant images using original ![[filename]] syntax.
+      - In the body, include sections that keep the concept grounded:
+        1. Spot Trigger (when this pattern appears in-game)
+        2. Thought Process (coach reasoning sequence)
+        3. Action Rule (what to do)
+        4. Examples (specific hand/board snippets from raw notes)
    e. **Mistake extraction (hand-review files):** Scan the file for lines starting with `Mistake:`. If any are found:
       - Group the mistakes by pattern/theme across all hand samples in the file.
       - Create one additional draft: `_draft-<slug>-mistakes-<YYYYMMDD-HHMM>.md`

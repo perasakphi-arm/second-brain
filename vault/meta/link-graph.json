@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-01",
+  "generated": "2026-05-02",
   "nodes": [
     "concept/poker-strategy-framework",
     "concept/three-layers-poker-strategy",
@@ -12,68 +12,130 @@
     "spot/srp-oop-pfc-bb-defend-mistakes",
     "tasks/3bp-oop-pfr-study-tasks",
     "tasks/srp-oop-pfc-bb-defend-study-tasks",
+    "tasks/master-todo",
+    "tasks/session-prep-todo",
     "concept/fish-exploit-data-srp-ip-pfr",
     "concept/villain-profile-fish-utg",
-    "hand/20260430-fish-utg-3bp-65s-vs-t9o"
+    "hand/20260430-fish-utg-3bp-65s-vs-t9o",
+    "hand/20260502-3bp-sb-kqhh-tc9h7h",
+    "reference/pre-session-20260502",
+    "concept/why-mindset-reverse-engineering",
+    "concept/ingredient-cause-effect-analysis",
+    "sessions/session-todo-20260502-s1",
+    "sessions/session-todo-20260502-s2",
+    "sessions/session-todo-20260502-s3"
   ],
   "edges": [
-    { "from": "concept/poker-strategy-framework", "to": "concept/three-layers-poker-strategy" },
-    { "from": "concept/poker-strategy-framework", "to": "concept/poker-study-methodology" },
-    { "from": "concept/three-layers-poker-strategy", "to": "concept/poker-strategy-framework" },
-    { "from": "concept/three-layers-poker-strategy", "to": "concept/poker-study-methodology" },
-    { "from": "concept/three-layers-poker-strategy", "to": "concept/villain-profile-fish-utg" },
-    { "from": "concept/poker-study-methodology", "to": "concept/3bp-oop-pfr-strategy" },
-    { "from": "concept/poker-study-methodology", "to": "concept/three-layers-poker-strategy" },
-    { "from": "concept/poker-study-methodology", "to": "tasks/3bp-oop-pfr-study-tasks" },
-    { "from": "concept/mtt-vs-cash-poker-is-poker", "to": "concept/poker-strategy-framework" },
-    { "from": "concept/mtt-vs-cash-poker-is-poker", "to": "concept/three-layers-poker-strategy" },
-    { "from": "concept/3bp-oop-pfr-strategy", "to": "spots/3bp-oop-pfr-flop-key-mistakes" },
-    { "from": "concept/3bp-oop-pfr-strategy", "to": "tasks/3bp-oop-pfr-study-tasks" },
-    { "from": "concept/3bp-oop-pfr-strategy", "to": "concept/poker-study-methodology" },
-    { "from": "concept/3bp-bu-vs-sb-t-high-exploit", "to": "concept/3bp-oop-pfr-strategy" },
-    { "from": "concept/3bp-bu-vs-sb-t-high-exploit", "to": "concept/three-layers-poker-strategy" },
-    { "from": "concept/3bp-bu-vs-sb-t-high-exploit", "to": "concept/poker-study-methodology" },
-    { "from": "spots/3bp-oop-pfr-flop-key-mistakes", "to": "concept/3bp-oop-pfr-strategy" },
-    { "from": "spots/3bp-oop-pfr-flop-key-mistakes", "to": "tasks/3bp-oop-pfr-study-tasks" },
-    { "from": "spot/srp-oop-pfc-bb-defend-flop", "to": "spot/srp-oop-pfc-bb-defend-mistakes" },
-    { "from": "spot/srp-oop-pfc-bb-defend-flop", "to": "tasks/srp-oop-pfc-bb-defend-study-tasks" },
-    { "from": "spot/srp-oop-pfc-bb-defend-flop", "to": "concept/three-layers-poker-strategy" },
-    { "from": "spot/srp-oop-pfc-bb-defend-mistakes", "to": "spot/srp-oop-pfc-bb-defend-flop" },
-    { "from": "spot/srp-oop-pfc-bb-defend-mistakes", "to": "tasks/srp-oop-pfc-bb-defend-study-tasks" },
-    { "from": "spot/srp-oop-pfc-bb-defend-mistakes", "to": "spots/3bp-oop-pfr-flop-key-mistakes" },
-    { "from": "tasks/3bp-oop-pfr-study-tasks", "to": "spots/3bp-oop-pfr-flop-key-mistakes" },
-    { "from": "tasks/3bp-oop-pfr-study-tasks", "to": "concept/3bp-oop-pfr-strategy" },
-    { "from": "tasks/srp-oop-pfc-bb-defend-study-tasks", "to": "spot/srp-oop-pfc-bb-defend-mistakes" },
-    { "from": "tasks/srp-oop-pfc-bb-defend-study-tasks", "to": "spot/srp-oop-pfc-bb-defend-flop" },
-    { "from": "tasks/srp-oop-pfc-bb-defend-study-tasks", "to": "tasks/3bp-oop-pfr-study-tasks" },
-    { "from": "concept/fish-exploit-data-srp-ip-pfr", "to": "concept/villain-profile-fish-utg" },
-    { "from": "concept/fish-exploit-data-srp-ip-pfr", "to": "concept/three-layers-poker-strategy" },
-    { "from": "concept/fish-exploit-data-srp-ip-pfr", "to": "hand/20260430-fish-utg-3bp-65s-vs-t9o" },
-    { "from": "concept/villain-profile-fish-utg", "to": "hand/20260430-fish-utg-3bp-65s-vs-t9o" },
-    { "from": "concept/villain-profile-fish-utg", "to": "concept/three-layers-poker-strategy" },
-    { "from": "concept/villain-profile-fish-utg", "to": "concept/fish-exploit-data-srp-ip-pfr" },
-    { "from": "hand/20260430-fish-utg-3bp-65s-vs-t9o", "to": "concept/three-layers-poker-strategy" },
-    { "from": "hand/20260430-fish-utg-3bp-65s-vs-t9o", "to": "concept/villain-profile-fish-utg" },
-    { "from": "hand/20260430-fish-utg-3bp-65s-vs-t9o", "to": "concept/fish-exploit-data-srp-ip-pfr" }
+    {"from": "concept/poker-strategy-framework", "to": "concept/three-layers-poker-strategy"},
+    {"from": "concept/poker-strategy-framework", "to": "concept/poker-study-methodology"},
+
+    {"from": "concept/three-layers-poker-strategy", "to": "concept/poker-strategy-framework"},
+    {"from": "concept/three-layers-poker-strategy", "to": "concept/poker-study-methodology"},
+    {"from": "concept/three-layers-poker-strategy", "to": "concept/villain-profile-fish-utg"},
+
+    {"from": "concept/poker-study-methodology", "to": "concept/3bp-oop-pfr-strategy"},
+    {"from": "concept/poker-study-methodology", "to": "concept/three-layers-poker-strategy"},
+    {"from": "concept/poker-study-methodology", "to": "tasks/3bp-oop-pfr-study-tasks"},
+    {"from": "concept/poker-study-methodology", "to": "concept/why-mindset-reverse-engineering"},
+
+    {"from": "concept/mtt-vs-cash-poker-is-poker", "to": "concept/poker-strategy-framework"},
+    {"from": "concept/mtt-vs-cash-poker-is-poker", "to": "concept/three-layers-poker-strategy"},
+    {"from": "concept/mtt-vs-cash-poker-is-poker", "to": "concept/why-mindset-reverse-engineering"},
+    {"from": "concept/mtt-vs-cash-poker-is-poker", "to": "concept/ingredient-cause-effect-analysis"},
+
+    {"from": "concept/3bp-oop-pfr-strategy", "to": "spots/3bp-oop-pfr-flop-key-mistakes"},
+    {"from": "concept/3bp-oop-pfr-strategy", "to": "tasks/3bp-oop-pfr-study-tasks"},
+    {"from": "concept/3bp-oop-pfr-strategy", "to": "concept/poker-study-methodology"},
+
+    {"from": "concept/3bp-bu-vs-sb-t-high-exploit", "to": "concept/3bp-oop-pfr-strategy"},
+    {"from": "concept/3bp-bu-vs-sb-t-high-exploit", "to": "concept/three-layers-poker-strategy"},
+    {"from": "concept/3bp-bu-vs-sb-t-high-exploit", "to": "concept/poker-study-methodology"},
+
+    {"from": "spots/3bp-oop-pfr-flop-key-mistakes", "to": "concept/3bp-oop-pfr-strategy"},
+    {"from": "spots/3bp-oop-pfr-flop-key-mistakes", "to": "tasks/3bp-oop-pfr-study-tasks"},
+    {"from": "spots/3bp-oop-pfr-flop-key-mistakes", "to": "hand/20260502-3bp-sb-kqhh-tc9h7h"},
+
+    {"from": "tasks/3bp-oop-pfr-study-tasks", "to": "spots/3bp-oop-pfr-flop-key-mistakes"},
+    {"from": "tasks/3bp-oop-pfr-study-tasks", "to": "concept/3bp-oop-pfr-strategy"},
+
+    {"from": "spot/srp-oop-pfc-bb-defend-flop", "to": "spot/srp-oop-pfc-bb-defend-mistakes"},
+    {"from": "spot/srp-oop-pfc-bb-defend-flop", "to": "tasks/srp-oop-pfc-bb-defend-study-tasks"},
+    {"from": "spot/srp-oop-pfc-bb-defend-flop", "to": "concept/three-layers-poker-strategy"},
+
+    {"from": "spot/srp-oop-pfc-bb-defend-mistakes", "to": "spot/srp-oop-pfc-bb-defend-flop"},
+    {"from": "spot/srp-oop-pfc-bb-defend-mistakes", "to": "tasks/srp-oop-pfc-bb-defend-study-tasks"},
+    {"from": "spot/srp-oop-pfc-bb-defend-mistakes", "to": "spots/3bp-oop-pfr-flop-key-mistakes"},
+
+    {"from": "tasks/srp-oop-pfc-bb-defend-study-tasks", "to": "spot/srp-oop-pfc-bb-defend-mistakes"},
+    {"from": "tasks/srp-oop-pfc-bb-defend-study-tasks", "to": "spot/srp-oop-pfc-bb-defend-flop"},
+    {"from": "tasks/srp-oop-pfc-bb-defend-study-tasks", "to": "tasks/3bp-oop-pfr-study-tasks"},
+
+    {"from": "tasks/master-todo", "to": "tasks/3bp-oop-pfr-study-tasks"},
+    {"from": "tasks/master-todo", "to": "tasks/srp-oop-pfc-bb-defend-study-tasks"},
+
+    {"from": "tasks/session-prep-todo", "to": "tasks/master-todo"},
+    {"from": "tasks/session-prep-todo", "to": "tasks/3bp-oop-pfr-study-tasks"},
+    {"from": "tasks/session-prep-todo", "to": "tasks/srp-oop-pfc-bb-defend-study-tasks"},
+
+    {"from": "concept/fish-exploit-data-srp-ip-pfr", "to": "concept/villain-profile-fish-utg"},
+    {"from": "concept/fish-exploit-data-srp-ip-pfr", "to": "concept/three-layers-poker-strategy"},
+    {"from": "concept/fish-exploit-data-srp-ip-pfr", "to": "hand/20260430-fish-utg-3bp-65s-vs-t9o"},
+
+    {"from": "concept/villain-profile-fish-utg", "to": "hand/20260430-fish-utg-3bp-65s-vs-t9o"},
+    {"from": "concept/villain-profile-fish-utg", "to": "concept/three-layers-poker-strategy"},
+    {"from": "concept/villain-profile-fish-utg", "to": "concept/fish-exploit-data-srp-ip-pfr"},
+
+    {"from": "hand/20260430-fish-utg-3bp-65s-vs-t9o", "to": "concept/three-layers-poker-strategy"},
+    {"from": "hand/20260430-fish-utg-3bp-65s-vs-t9o", "to": "concept/villain-profile-fish-utg"},
+    {"from": "hand/20260430-fish-utg-3bp-65s-vs-t9o", "to": "concept/fish-exploit-data-srp-ip-pfr"},
+
+    {"from": "hand/20260502-3bp-sb-kqhh-tc9h7h", "to": "concept/3bp-oop-pfr-strategy"},
+    {"from": "hand/20260502-3bp-sb-kqhh-tc9h7h", "to": "spots/3bp-oop-pfr-flop-key-mistakes"},
+
+    {"from": "concept/why-mindset-reverse-engineering", "to": "concept/mtt-vs-cash-poker-is-poker"},
+    {"from": "concept/why-mindset-reverse-engineering", "to": "concept/poker-study-methodology"},
+    {"from": "concept/why-mindset-reverse-engineering", "to": "concept/ingredient-cause-effect-analysis"},
+    {"from": "concept/why-mindset-reverse-engineering", "to": "concept/poker-strategy-framework"},
+
+    {"from": "concept/ingredient-cause-effect-analysis", "to": "concept/why-mindset-reverse-engineering"},
+    {"from": "concept/ingredient-cause-effect-analysis", "to": "concept/mtt-vs-cash-poker-is-poker"},
+    {"from": "concept/ingredient-cause-effect-analysis", "to": "concept/3bp-oop-pfr-strategy"},
+    {"from": "concept/ingredient-cause-effect-analysis", "to": "concept/3bp-bu-vs-sb-t-high-exploit"},
+    {"from": "concept/ingredient-cause-effect-analysis", "to": "spot/srp-oop-pfc-bb-defend-flop"},
+
+    {"from": "sessions/session-todo-20260502-s1", "to": "tasks/session-prep-todo"},
+    {"from": "sessions/session-todo-20260502-s1", "to": "reference/pre-session-20260502"},
+
+    {"from": "sessions/session-todo-20260502-s2", "to": "tasks/session-prep-todo"},
+    {"from": "sessions/session-todo-20260502-s2", "to": "sessions/session-todo-20260502-s1"}
   ],
   "inbound_counts": {
-    "concept/poker-strategy-framework": 2,
+    "concept/poker-strategy-framework": 3,
     "concept/three-layers-poker-strategy": 8,
-    "concept/poker-study-methodology": 4,
-    "concept/mtt-vs-cash-poker-is-poker": 0,
-    "concept/3bp-oop-pfr-strategy": 4,
-    "concept/3bp-bu-vs-sb-t-high-exploit": 0,
-    "spots/3bp-oop-pfr-flop-key-mistakes": 3,
-    "spot/srp-oop-pfc-bb-defend-flop": 2,
+    "concept/poker-study-methodology": 5,
+    "concept/mtt-vs-cash-poker-is-poker": 2,
+    "concept/3bp-oop-pfr-strategy": 6,
+    "concept/3bp-bu-vs-sb-t-high-exploit": 1,
+    "spots/3bp-oop-pfr-flop-key-mistakes": 4,
+    "spot/srp-oop-pfc-bb-defend-flop": 3,
     "spot/srp-oop-pfc-bb-defend-mistakes": 2,
-    "tasks/3bp-oop-pfr-study-tasks": 4,
-    "tasks/srp-oop-pfc-bb-defend-study-tasks": 2,
+    "tasks/3bp-oop-pfr-study-tasks": 6,
+    "tasks/srp-oop-pfc-bb-defend-study-tasks": 4,
+    "tasks/master-todo": 1,
+    "tasks/session-prep-todo": 2,
     "concept/fish-exploit-data-srp-ip-pfr": 2,
     "concept/villain-profile-fish-utg": 3,
-    "hand/20260430-fish-utg-3bp-65s-vs-t9o": 2
+    "hand/20260430-fish-utg-3bp-65s-vs-t9o": 2,
+    "hand/20260502-3bp-sb-kqhh-tc9h7h": 1,
+    "reference/pre-session-20260502": 1,
+    "concept/why-mindset-reverse-engineering": 3,
+    "concept/ingredient-cause-effect-analysis": 2,
+    "sessions/session-todo-20260502-s1": 1,
+    "sessions/session-todo-20260502-s2": 0,
+    "sessions/session-todo-20260502-s3": 0
   },
   "orphans": [
-    "concept/mtt-vs-cash-poker-is-poker",
-    "concept/3bp-bu-vs-sb-t-high-exploit"
+    "sessions/session-todo-20260502-s2",
+    "sessions/session-todo-20260502-s3"
   ]
 }

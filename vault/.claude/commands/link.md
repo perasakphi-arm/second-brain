@@ -33,6 +33,8 @@ ALIAS_FILE: meta/alias-table.json
 - A link is only worth adding if it genuinely helps the reader — it should answer "where do I go to learn more about THIS specific thing I just read?"
 - Do not link every possible connection. Prefer 2–5 high-value links per note over a wall of links.
 - If no meaningful inline location exists, append a `## See Also` section at the end of the note body.
+- Prefer links at concrete in-game moments (spot trigger, board condition, thought-process step, action rule), not generic theory sentences.
+- For atomic concepts, link based on shared decision patterns (trigger -> reasoning -> action) in similar spots, not wording similarity alone.
 
 ## Workflow
 
@@ -59,11 +61,13 @@ ALIAS_FILE: meta/alias-table.json
    - Does this note APPLY or EXTEND a framework from the other note?
    - Does this note CONTRAST with or COMPARE to the other note?
    - Would a reader finishing this paragraph naturally want to read the other note next?
+   - Does the candidate note explain the same in-game decision pattern in a comparable situation (same kind of trigger/board/action)?
 
    If yes to any → add the link at the relevant sentence.
    If no natural inline location → collect for `## See Also`.
 
    Do NOT add a link just because two notes share a tag or topic. Only link when the connection is actionable for a reader.
+   Prefer anchors near concrete examples (hand lines, board texture reads, decision checkpoints) when available.
 
 6. **Merge and write:**
    a. Combine links from both passes. Deduplicate.

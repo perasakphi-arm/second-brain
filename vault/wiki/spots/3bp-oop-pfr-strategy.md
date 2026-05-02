@@ -9,7 +9,7 @@ sources:
 aliases: [3BP OOP PFR, three bet pot oop pfr, 3bp oop strategy, Tony 3bet pot, 3bp oop pfr remain flop, 3bp oop pfr flop textures, tony 3bet pot remain flop, 3bp oop remain flop]
 created: 2026-04-23
 updated: 2026-04-26
-links_out: []
+links_out: [spots/3bp-oop-pfr-flop-key-mistakes, tasks/3bp-oop-pfr-study-tasks, concept/poker-study-methodology]
 ---
 
 # 3-Bet Pot OOP as Preflop Raiser (Tony)
@@ -802,6 +802,11 @@ Turn Ah: consider block to get value again from weak pocket pairs; prevents 0-EV
 Flop A92 — range bet strategy.
 
 Turn 6h: two options — check-call (blocks value hand) or block bet (gets call from weaker pockets).
+
+## See Also
+- [[spots/3bp-oop-pfr-flop-key-mistakes|Key Mistakes on the Flop & Turn]] — common errors to avoid on this spot
+- [[tasks/3bp-oop-pfr-study-tasks|3BP OOP PFR Study Tasks]] — structured drills for this spot
+- [[concept/poker-study-methodology|Poker Study Methodology]] — how to prioritize and study this spot type
 
 #### Hand R20
 

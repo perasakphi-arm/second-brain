@@ -179,19 +179,31 @@ Tony: สร้าง range bet flop ได้
 
 2.
 ![[Pasted image 20260426110953.png]]
-Tony: เป็น flop ที่สร้าง bet big ได้เพราะมี card ที่เราไม่อยากเล่นที่ River เยอะ เพราะฉะนั้นสำหรับ AK เป็น bet and jam turn
+Flop K93 flush draw
+Hero: AK
+Action Bet small flop and B75 turn
+Tony: comment เนื่องจาก flop ค่อนข้าง drawy เพราะฉะนั้นเราควรเล่น Value hand bet big และ Jam Turn สำหรับ Stack size 100 bb
 
+Mistake: value hand bet small flop ใน board drawy
 
 3.
 ![[Pasted image 20260426111137.png]]
 Flop K96 flush draw
-สำหรับ JT คิดว่า bet small ได้ แต่ถ้าเรามี value hand พวก KQ,AK,AA พยายามเล่น bet big แล้ว plan to jam turn
+Hero JT with bdfd
+Action bet small แล้วเจอ min raise
+Tony: comment clear call สำหรับ Gutshot with bdfd และ ถ้า Turn hit flush draw เราสามารถเล่น aggressive ได้โดย check raise all-in
+
 
 4.
 ![[Pasted image 20260426111321.png]]
+Flop KT9 flush draw
+Hero: 99
+Action bet small flop
+Turn Kd
+เรา bet b75 
+Tony: comment คิดว่าเราควรเล่น check มากกว่าเพราะว่าต้องการให้ 0 Equity hand put money และ Kx ยังไงก็ bet ถ้าเรา check เพราะฉะนั้นการ check ไม่เสีย EV
+Mistake: Fast play value no need protection
 
-Flop KT9 คล้ายๆ กับ BBB
-คิดว่า เรา bet 20% และ Turn คิดว่าควร check มากกว่า
 
 ![[Pasted image 20260426111450.png]]
 Turn Option
@@ -200,55 +212,85 @@ Turn Option
 5.
 ![[Pasted image 20260426111557.png]]
 Flop Q44
-Range bet strategy
+Hero: AQo
+Flop Range bet strategy ok
 
-Turn 5s non flush
-คิดว่าสำหรับ AQo เราสามารถเล่น check ได้เพราะ block check range และ unblock stabbing KT,KJ เป็นต้น
+Turn 5s non flush draw
+คิดว่าเราควร check back AQo เพราะว่า เรา check back range คือ Ax combo และ unblock bluff เช่น KT,KJ และ Value hand ที่ pure bet IP คือ KQ,QJ
+
+Mistake: fast play value hand almost no need protection
 
 6.
 ![[Pasted image 20260426111801.png]]
 Flop AJ4 flush draw
-Standard strategy คือ Flop up size และ Jam turn
+Hero: AQo
+Flop bet small 
+Tony Comment: ควรเป็น Bet และ shove turn มากกว่าเพราะว่า board ค่อนข้าง connect และมี worst hand call
+
+Mistake: bet small strong value hand flop draw
 
 7.
 ![[Pasted image 20260426111902.png]]
 Flop Q72 flush draw
-Flop range bet
+Hero: 77
+Flop range bet ok
+Turn: hero bet b75
 
-Turn slow play with set เพราะต้องการให้ เค้า put money with 0 equity 
+Tony comment: ที่ Turn เราควร check มากกว่า เพราะว่า keep low pocket และ bluffing region ของ IP คือ KT,KJ ที่เรา unblock
+
+Mistake: fast play value (no need protection)
 
 8.
 ![[Pasted image 20260426112016.png]]
+Flop A94
+Hero: AA
 Flop Range bet
 Turn clear check with top set
 
 Tony Comment เพิ่มเติมสำหรับ 99 ที่เป็น mid set ใน flop Tony คิดว่าเรา bet เอง for value ดีกว่า เพราะว่า IP strategy ไม่ได้ bet Ax top pair เยอะ และ under bluff แต่ต่างกับ Q72 6 เพราะมี natural bluff คือพวก over card ทำให้เราสามารถ check mid set ได้มากขึ้นโดยไม่ loss value 
 
+Mistake: fast play value (no need protection)
 
 9.
 ![[Pasted image 20260426112434.png]]
 Flop AJ6 flush draw
-Standard strategy คือ Bet big flop และ Jam turn for value
+Hero: AJ
+Flop เราเลือก bet small
+Tony Comment: เนื่องจาก flop drawy และมี hand call ได้เยอะเพราะฉะนั้นควรเล่น bet big และ shove turn
+
+Mistake: Bet small with strong hand OTF drawy
 
 
 10.
 ![[Pasted image 20260426112656.png]]
-Flop range bet
-Turn: เราเล่น polarize strategy และ hand นี้ clear check เพราะ block call และ ต้องการ set cooler
+Flop A78
+Hero AA
+Flop bet small ok
+Turn : Hero value B75
+
+Tony Comment เราควร check เพราะว่า block call และ keep cooler in
+
+Mistake: fast play value (no need protection)
 
 11.
 ![[Pasted image 20260426112750.png]]
 Flop QT7 flush
-ถ้าเรา ถือ gutshot flush draw plan คือ realize equity และถ้าสามารถา หา line ที่ deny ได้ด้วยจะ ok play
+Hero: J9 gutshot flush draw
+Flop bet small ok
+Turn เรา B75 
 
-Flop bet small และ turn อาจจะ check jam
+Tony comment: turn เราควรคิดถึง Equity realization สำหรับ Big draw Key คือถ้าเราไม่สามารถ bet call Jam ได้เราควรเล่น check raise เอง
+
+Mistake: big draw equity realization
 
 12.
 ![[Pasted image 20260426112934.png]]
 Flop A53 rainbow
+Hero AA
 Flop range bet
 Turn need to slow play
 
+Mistake: fast play value (no need protection)
 13.
 ![[Pasted image 20260426113101.png]]
 Flop Q23 flush draw
@@ -257,11 +299,14 @@ Flop Q23 flush draw
 14.
 ![[Pasted image 20260426113151.png]]
 Flop QQ7
+Hero: 88
 Range bet strategy
 
 Turn 7
 question เราสามารถ block อีกรอบ โดยทำให้ A high call 
 ใน solver เล่น 88 เป็น good bluff catch แต่ ซึ่งที่ผิดพลาดคือเราไม่ได้ block for value และ prevent 0 EV
+
+Mistake: Prevent 0 EV scenario
 
 15.
 ![[Pasted image 20260426113411.png]]
@@ -271,15 +316,18 @@ Range bet strategy
 Turn T no flush
 with J9 gutshot น่าจะ สามารถเล่น B50 pot ได้ และ put pressure ไปยังพวก pocket region
 
+Mistake: ไม่ได้ Cbet turn with equity hand
+
 16.
 ![[Pasted image 20260426113625.png]]
 Flop AA3 flush draw
+Hero 66
 Range bet flop
 
 Turn: 8
 เรา check , Tony คิดว่าเราน่าจะ check call เพราะ เรา unblock flush draw bluff และ size small เค้าอาจจะ bet low pocket 44,55 for value + protection
 
-
+Mistake: 0 EV Prevent
 17.
 ![[Pasted image 20260426113836.png]]
 Flop AJ8 flush draw
@@ -291,6 +339,7 @@ Turn
 18
 ![[Pasted image 20260426113947.png]]
 Flop J73
+Hero: TT
 จะมีความคล้าย flop T72
 strategy น่าจะเป็น Bet big, check
 
@@ -298,14 +347,18 @@ Turn Ah
 Consider block เพื่อ get value อีกรอบจาก pocket weak pair
 
 เพื่อ prevent 0 EV scenario
+Mistake: Prevent 0 EV scenario
 
 19
 ![[Pasted image 20260426114211.png]]
 Flop A92
+Hero QQ
 Range bet strategy
 
 Turn 6h
 Consider 2 Option คือ check call เพราะ block value hand หรือ block เพื่อ get call by worst pocket
+
+Mistake: Prevent 0 EV scenario
 
 20
 ![[Pasted image 20260426114352.png]]
@@ -315,6 +368,7 @@ Range bet strategy
 Turn 7h
 consider bet 50% pot size เพื่อ get call flush draw และ บาง pocket pair
 
+Mistake: Prevent 0 EV scenario
 
 
 

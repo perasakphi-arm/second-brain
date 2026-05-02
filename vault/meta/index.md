@@ -16,6 +16,17 @@
 
 - [[concept/3bp-oop-pfr-strategy]] — 3-Bet Pot OOP as Preflop Raiser (Tony) (poker, 3bet-pot, oop, pfr, flop-strategy, board-texture, tony, cbet, bluff, value, range-bet, polarize)
 - [[concept/3bp-bu-vs-sb-t-high-exploit]] — 3BP BU vs SB — T-High Flop Exploit Strategy (poker, 3bet-pot, bu, ip, pfc, exploit, t-high, flop-strategy, population-read, check-raise, turn-probe)
+- [[spots/3bp-oop-pfr-flop-key-mistakes]] — 3BP OOP PFR — Key Mistakes on the Flop & Turn (3bp, oop, pfr, remain, flop, mistake-analysis, spot, tony)
+- [[spot/srp-oop-pfc-bb-defend-flop]] — SRP OOP PFC — BB Defend vs BU Flop Strategy (Tony) (srp, oop, pfc, bb-defend, flop-strategy, board-texture, tony, check-raise, protection, donk, spot)
+- [[spot/srp-oop-pfc-bb-defend-mistakes]] — SRP OOP PFC (BB Defend) — Key Mistakes on the Flop (srp, oop, pfc, bb-defend, flop-strategy, mistake-analysis, spot, tony)
+
+## Tasks
+
+- [[tasks/master-todo]] — Master To-Do List (task-list, study, todo)
+- [[tasks/session-prep-todo]] — Session Prep — Recurring Checklist (task-list, study, session-prep, methodology)
+- [[tasks/session-todo-20260502-s1]] — Session To-Do — 2026-05-02 Session 1 (task-list, session-todo)
+- [[tasks/3bp-oop-pfr-study-tasks]] — 3BP OOP PFR — Study Task List & Progress Tracker (3bp, oop, pfr, study, methodology, tony, task-list)
+- [[tasks/srp-oop-pfc-bb-defend-study-tasks]] — SRP OOP PFC (BB Defend) — Study Task List & Progress Tracker (srp, oop, pfc, bb-defend, study, methodology, tony, task-list)
 
 ## Population Reads
 
@@ -43,7 +54,7 @@ _(none yet)_
 
 ## References
 
-_(none yet)_
+- [[reference/pre-session-20260502]] — Pre-Session Leak Focus — 2026-05-02 (session-prep, leaks)
 
 ## Q&A
 

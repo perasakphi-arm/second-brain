@@ -23,6 +23,7 @@ trustworthy. There are no exceptions.
 | `inbox/` | Claude drafts awaiting user review — filenames start with `_draft-` |
 | `wiki/frameworks/` | Coaching philosophy and general poker theory (Wakko, Tony) |
 | `wiki/spots/` | Spot-specific strategy (board × position × pot type) |
+| `wiki/tasks/` | Study task lists and progress trackers — one note per spot or session topic |
 | `wiki/population/` | Pool-wide reads — patterns true of the average opponent |
 | `wiki/villains/` | Individual villain profiles — one note per known opponent |
 | `wiki/hands/` | Atomic hand-review notes — one note per reviewed hand |
@@ -38,7 +39,8 @@ When creating inbox drafts, choose the target wiki folder based on tags:
 
 | Tags on draft | Target folder after `/approve` |
 |---------------|-------------------------------|
-| `wakko`, `tony`, `strategy`, `study`, `methodology` | `wiki/frameworks/` |
+| `task-list`, `study` + `task-list` | `wiki/tasks/` |
+| `wakko`, `tony`, `strategy`, `study`, `methodology` (without `task-list`) | `wiki/frameworks/` |
 | `spot`, `board-texture`, `pfr`, `pfc`, `3bp`, `srp` (without villain tag) | `wiki/spots/` |
 | `population`, `pool-read`, `recreational-player` | `wiki/population/` |
 | `villain`, `profiling` | `wiki/villains/` |

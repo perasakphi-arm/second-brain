@@ -9,7 +9,7 @@ sources:
 aliases: [fish utg profile, villain fish profile, fish calling range, fish tendencies]
 created: 2026-04-30
 updated: 2026-04-30
-links_out: [concept/poker-strategy-framework, concept/three-layers-poker-strategy]
+links_out: [hand/20260430-fish-utg-3bp-65s-vs-t9o, concept/three-layers-poker-strategy, concept/fish-exploit-data-srp-ip-pfr]
 ---
 
 # Villain Profile — Fish (UTG Regular)
@@ -101,7 +101,7 @@ T3o:0.005, T2o:0.005, 84o:0.005, 93o:0.005, 62o:0.005, 83o:0.005,
 
 ## Exploit Framework (Strategy Layer per Wakko)
 
-**Correct layer vs this fish:** L2 — Offensive Population Exploit
+**Correct layer vs this fish:** [[concept/three-layers-poker-strategy|L2 — Offensive Population Exploit]]
 
 | When | Action |
 |------|--------|
@@ -127,3 +127,6 @@ T3o:0.005, T2o:0.005, 84o:0.005, 93o:0.005, 62o:0.005, 83o:0.005,
 - [ ] Any new lines observed (check-raise frequency, probe bets, 4-bet range if ever seen)
 - [ ] Any positional adjustments (does fish play differently from BB vs BTN?)
 - [ ] Session win/loss vs this fish
+
+## See Also
+- [[concept/fish-exploit-data-srp-ip-pfr|Fish Exploit Data — SRP IP PFR]] — pool-level data that corroborates this villain's wide-call tendencies

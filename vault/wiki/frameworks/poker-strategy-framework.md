@@ -8,7 +8,7 @@ sources:
 aliases: [poker strategy, GTO vs exploit, defensive poker, offensive poker, poker strategy definition]
 created: 2026-04-19
 updated: 2026-04-19
-links_out: []
+links_out: [concept/three-layers-poker-strategy, concept/poker-study-methodology]
 ---
 
 # Poker Strategy Framework
@@ -84,3 +84,7 @@ Memorizing GTO strategy is less durable than understanding the underlying theory
 ![[Pasted image 20260418145607.png]]
 
 Both approaches are worth studying. GTO teaches what "correct" looks like; exploit layers on top by deviating when information justifies it.
+
+## See Also
+- [[concept/three-layers-poker-strategy|Three Layers of Poker Strategy]] — operational implementation of this framework (Layers 1–3)
+- [[concept/poker-study-methodology|Poker Study Methodology]] — how to systematically build your poker strategy spot by spot

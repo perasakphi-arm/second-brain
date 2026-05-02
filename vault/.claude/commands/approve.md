@@ -46,7 +46,8 @@ INDEX_FILE: meta/index.md
    - tags include `hand-review` → `wiki/hands/<slug>.md`
    - tags include `villain` or `profiling` → `wiki/villains/<slug>.md`
    - tags include `population` or `pool-read` or `recreational-player` → `wiki/population/<slug>.md`
-   - tags include `wakko` or `tony` or (`strategy` AND NOT `hand-review`) or `study` or `methodology` → `wiki/frameworks/<slug>.md`
+   - tags include `task-list` → `wiki/tasks/<slug>.md`
+   - tags include `wakko` or `tony` or (`strategy` AND NOT `hand-review`) or `study` or `methodology` (AND NOT `task-list`) → `wiki/frameworks/<slug>.md`
    - tags include `spot` or `board-texture` or `pfr` or `pfc` or `3bp` or `srp` (AND NOT villain/hand-review tags) → `wiki/spots/<slug>.md`
    - all others → `wiki/concepts/<slug>.md`
 6. Check if destination already exists:

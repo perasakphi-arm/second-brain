@@ -8,7 +8,7 @@ sources:
 aliases: [poker study, how to study poker, study spots, study priority, poker improvement, what to study poker]
 created: 2026-04-19
 updated: 2026-04-19
-links_out: [concept/3bp-oop-pfr-strategy]
+links_out: [concept/3bp-oop-pfr-strategy, concept/three-layers-poker-strategy, tasks/3bp-oop-pfr-study-tasks]
 ---
 
 # Poker Study Methodology
@@ -67,7 +67,7 @@ Priority criteria (in order):
 | SRP IP PFR (esp. BUvBB, COvBB) | Highest win-rate contributor; frequent; pool has leaks in defense |
 | [[concept/3bp-oop-pfr-strategy\|3BP OOP PFR]] | Less frequent but large pot |
 | SRP OOP PFC | Mirror of SRP IP PFR; study together |
-| 3BP IP PFC | Mirror of 3BP OOP PFR; study together |
+| 3BP IP PFC | Mirror of [[concept/3bp-oop-pfr-strategy|3BP OOP PFR]]; study together |
 
 Mastering these four spots teaches the underlying poker theory that scales to all other spots. Concepts from PFR IP/OOP and PFC IP/OOP recur everywhere.
 
@@ -143,3 +143,7 @@ Turn is studied holistically in two categories: **Blank Turn** vs **Complete Tur
 
 - Low-combo spots (e.g., 4BP, 3BP OOP PFC) → use **weighted ranges** — range composition has a large strategic impact
 - Low-frequency spots → **merge ranges** to simplify the study tree
+
+## See Also
+- [[concept/three-layers-poker-strategy|Three Layers of Poker Strategy]] — what the study methodology is building toward
+- [[tasks/3bp-oop-pfr-study-tasks|3BP OOP PFR Study Tasks]] — example of this methodology applied to a specific spot

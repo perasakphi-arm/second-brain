@@ -22,6 +22,7 @@ Scan `raw/` for notes containing "review" in a heading or content. For each foun
 
 ## Instructions
 
+- Users should fill out `templates/raw-hand-input.md` before dropping a hand into `raw/` — this template captures all fields needed (hero suit, villain cards, board suits, street-by-street thought process) so no mid-review clarifications are needed
 - Only review notes in `raw/` that contain "review" (case-insensitive) in any heading (`#` lines) or anywhere in the body
 - Read the Tony and Wakko wiki notes before producing any analysis — every claim must trace back to those sources
 - Do not invent ranges, solver outputs, or bet frequencies — only reference what is documented in the wiki

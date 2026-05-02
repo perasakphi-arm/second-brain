@@ -8,7 +8,7 @@ sources:
 aliases: [poker is poker, mtt vs cash same, mtt cash same strategy, ingredient-based strategy, poker ingredients, wakko mtt vs cash]
 created: 2026-04-26
 updated: 2026-04-26
-links_out: []
+links_out: [concept/poker-strategy-framework, concept/three-layers-poker-strategy]
 ---
 
 # MTT vs Cash — Poker Is Poker (Wakko)
@@ -175,3 +175,7 @@ We check-raise more aggressively in tournaments vs cash — especially in **low 
 **Why?** Low SPR makes us more willing to stack off OOP. At deep SPR (cash), we check-raise more passively. Conversely, in a cash game with a short-stacked opponent, we can check-raise more aggressively.
 
 The reason is SPR, not "it's a tournament."
+
+## See Also
+- [[concept/poker-strategy-framework|Poker Strategy Framework]] — the foundational framework applied across formats
+- [[concept/three-layers-poker-strategy|Three Layers of Poker Strategy]] — how ingredients affect which strategic layer is viable

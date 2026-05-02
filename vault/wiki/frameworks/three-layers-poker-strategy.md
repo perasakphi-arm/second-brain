@@ -8,7 +8,7 @@ sources:
 aliases: [3 layers poker, poker layers, defensive baseline, offensive adjustment, in-game adjustment, A-game B-game C-game poker]
 created: 2026-04-19
 updated: 2026-04-19
-links_out: [concept/poker-strategy-framework]
+links_out: [concept/poker-strategy-framework, concept/poker-study-methodology, concept/villain-profile-fish-utg]
 ---
 
 # Three Layers of Poker Strategy
@@ -43,7 +43,7 @@ Wakko divides [[concept/poker-strategy-framework|poker strategy]] into three lay
 
 Deviations from Layer 1 based on **population tendencies** or accumulated data:
 
-- Identify population leaks via MDA (e.g., pool under-check-raise, pool over-folds certain spots)
+- Identify [[concept/poker-study-methodology|population leaks]] via MDA (e.g., pool under-check-raise, pool over-folds certain spots)
 - Adjust frequencies accordingly: increase bet frequency where pool over-folds, decrease where pool over-calls
 - Ripple effect adjustments: modify Flop or Preflop lines based on known River/Turn population leaks looking ahead
 - Build **aggression protocols** — "hotspots" where the pool consistently over-folds (e.g., pool over-folds River in X line → bluff River at high frequency)
@@ -89,3 +89,6 @@ Football analogy: Layer 1 = defensive line (must be solid, no creativity), Layer
 ![[Pasted image 20260418154119.png]]
 
 ![[Pasted image 20260418154234.png]]
+
+## See Also
+- [[concept/villain-profile-fish-utg|Villain Profile — Fish (UTG)]] — example of L3 individual-player adjustment in practice

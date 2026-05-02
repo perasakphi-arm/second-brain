@@ -68,5 +68,15 @@
     "file": "raw/Hand Review vs fish.md",
     "ingested": "2026-04-30",
     "wiki_id": "concept/villain-profile-fish-utg"
+  },
+  "c7820282b092c4e8c593bdb9c79c158e0fb50826c2655d788fb285a1395ee8e2": {
+    "file": "raw/3BP OOP PFR remain flop.md",
+    "ingested": "2026-04-30",
+    "wiki_id": "spots/3bp-oop-pfr-flop-key-mistakes"
+  },
+  "a230007f42c446028b31c706eec3828ddfb717dc2c6a1fa58fa41ad3b40a5916": {
+    "file": "raw/SRP OOP PFR (BB defend).md",
+    "ingested": "2026-05-01",
+    "wiki_id": "spot/srp-oop-pfc-bb-defend-flop"
   }
 }

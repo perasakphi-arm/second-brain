@@ -9,10 +9,9 @@ aliases: [fish utg jam hand 20260430, 65s vs t9o flush board, hand review fish 3
 created: 2026-04-30
 updated: 2026-04-30
 links_out:
-  - concept/villain-profile-fish-utg
-  - concept/3bp-oop-pfr-strategy
   - concept/three-layers-poker-strategy
-  - concept/poker-strategy-framework
+  - concept/villain-profile-fish-utg
+  - concept/fish-exploit-data-srp-ip-pfr
 ---
 
 # 3BP BU 65s vs Fish UTG T9o (Board 8s6s8c-9s-Js)
@@ -136,3 +135,7 @@ Per Wakko's [[concept/three-layers-poker-strategy|Three Layers]]:
 | 2 | Acknowledged "fish could be trapping with FH/quad" then jammed into that range anyway |
 | 3 | Turn: called T9o type "1 pair" after 9s improved it to pair + live flush draw |
 | 4 | Used "88" and "66" notation where board already shows these as impossible pocket pairs |
+
+## See Also
+- [[concept/villain-profile-fish-utg|Villain Profile — Fish (UTG)]] — the villain database this hand informs
+- [[concept/fish-exploit-data-srp-ip-pfr|Fish Exploit Data — SRP IP PFR]] — pool-level data that corroborates this analysis

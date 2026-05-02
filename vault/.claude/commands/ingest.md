@@ -42,6 +42,17 @@ PROCESSED_FILE: meta/processed.json
       - Use the full frontmatter contract from CLAUDE.md.
       - Set sources to include the raw file path.
       - Carry over relevant images using original ![[filename]] syntax.
+   e. **Mistake extraction (hand-review files):** Scan the file for lines starting with `Mistake:`. If any are found:
+      - Group the mistakes by pattern/theme across all hand samples in the file.
+      - Create one additional draft: `_draft-<slug>-mistakes-<YYYYMMDD-HHMM>.md`
+      - The mistakes draft must contain:
+        1. A summary table listing each mistake category, which hands it appeared in, and a one-line rule.
+        2. For each category: the pattern (what was done), why it is wrong, the correct approach, and a table of hand examples from the file.
+        3. Tags must include `mistake-analysis` and `hand-review` plus any spot tags from the source file.
+      - Also create a companion task-list draft: `_draft-<slug>-study-tasks-<YYYYMMDD-HHMM>.md`
+        - One study module per mistake category.
+        - Each module: goal, 3–5 actionable tasks with checkboxes, "Done when" criterion.
+        - Append a Session Review Protocol section and a Progress Milestones table.
 4. After all files processed, compile the report.
 
 ## Report
@@ -54,6 +65,8 @@ Status: SUCCESS / PARTIAL / FAILED
 
 Details:
 - <draft filename> — <concept title> [NEW note | EXTENDS <existing-id>] [<N> image(s) carried]
+- <draft filename> — Mistake Analysis [<N> mistake categories, <N> hand examples] (if applicable)
+- <draft filename> — Study Task List [<N> modules] (if applicable)
 - ...
 
 Skipped (already processed):

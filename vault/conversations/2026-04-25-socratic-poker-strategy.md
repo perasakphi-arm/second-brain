@@ -1,6 +1,6 @@
 # Socratic Session — Poker Strategy
-**Date:** 2026-04-25  
-**Status:** In progress — paused at Phase 2 (Examine)
+**Date:** 2026-04-25 (resumed 2026-05-04)
+**Status:** Paused — Phase 2 complete, Phase 3 not started
 
 ---
 
@@ -34,26 +34,81 @@
 
 **User answer:** Start with a GTO baseline — actions that are "not bad" — and as we collect more information and can make reads, adjust from the baseline.
 
-**Claude note:** User has arrived at the core Layer 1 insight. Ready to test the boundary: can humans execute true GTO, and if not, what does the baseline actually need to be?
+---
+
+### Probe 4 (resumed 2026-05-04)
+> "Can a human actually execute true GTO at the table — and if not, does that change what the baseline needs to be?"
+
+**User answer:** Humans can't execute full GTO, which creates exploit opportunities. We need a very simple baseline strategy for defensive play.
+
+---
+
+### Probe 5
+> "If your baseline is intentionally simple — not true GTO — doesn't that mean a skilled opponent could exploit you? What's the actual job of the baseline: be unexploitable, or something else?"
+
+**User answer:** The baseline should be both unexploitable and effective to execute.
+
+---
+
+### Probe 6
+> "True GTO is unexploitable. A simple strategy is executable. Can something be both at the same time — and if not, which one do you actually sacrifice, and how much?"
+
+**User answer:** Both are possible depending on how you set up the tree. Simplified solver trees (fewer bet sizes, cleaner nodes) can be close to unexploitable while remaining executable.
+
+---
+
+### Probe 7
+> "If you simplify the tree and your strategy becomes slightly exploitable — how do you know whether that's acceptable? What's the actual threshold for 'good enough'?"
+
+**User answer:** Two methods: (1) EV loss measurement, (2) whether the pool can actually detect and execute the counter-exploit. Example: range betting flop creates a B-X-B river over-fold leak, but if the pool can't construct the exploit, the strategy's EV gain outweighs the theoretical leak.
+
+---
+
+### Probe 8
+> "How do you actually know whether the pool can detect and execute a specific counter-exploit?"
+
+**User answer:** Need to understand villain's calling and bluffing tendencies. At 200NL, regs use MDA tools to detect leaks like B-X-B river over-fold. Detection is easy (run the filter) but execution is hard — requires identifying correct textures, sizing bluffs, choosing bluff candidates. Most regs stop at detection.
+
+---
+
+### Probe 9
+> "If detection is easy but execution is hard, what makes a leak 'safe to keep' vs 'must fix'?"
+
+**User answer:** Safe to keep if execution of the counter is complex. But noted that X-C-X-B (BB donk river after check-call flop, check turn) is easy to exploit because IP's B-X range is capped and junk-heavy — BB can call wide and bluff aggressively on that line.
+
+---
+
+### Probe 10
+> "Does this exploit work equally on all board textures?"
+
+**User answer:** No — board-range interaction is the key variable. Two examples:
+- **J56-2-9:** BU's B-X range is weaker than solver because population under-bluffs anti-blocker hands. BB's aggression works well.
+- **QT3-2-7:** BU has many Tx medium-strength hands (KT, JT, AT offsuit) that legitimately check turn for pot control. Population also over-bets draws on flop, so B-X still contains equity hands. BB's river aggression backfires.
+
+**Key variable identified:** Whether IP has a large "medium-strength zone" that connects with the board and wants to check turn. If yes → B-X is not weak. If no → B-X is junk-heavy.
 
 ---
 
 ## Current State
 
-**Phase:** 2 — Examine (testing boundaries of the baseline concept)
+**Phase:** 2 — Examine (complete)
 
-**Last question asked (unanswered):**
-> "Can a human actually execute true GTO at the table — and if not, does that change what the baseline needs to be?"
+**Last question asked (unanswered — session ended):**
+> "At the table in real-time, what's the quick mental check you'd use to decide whether a board gives IP a large medium-strength zone or not — before committing to the river aggression line?"
 
-**Key insight established so far:**
+**Key insights established:**
 - Strategy = systematic, not just a collection of plays
-- Full adaptability is costly (energy) and risky (wrong reads cause net EV loss)
-- Need a fallback baseline that works with zero information → GTO-like default
+- Full adaptability is costly and risky (wrong reads cause net EV loss)
+- Need a GTO-like baseline as fallback → simplified trees can be both executable and near-unexploitable
+- Leak acceptability = EV leak vs pool's ability to execute the counter (not just detect)
+- Detection is cheap; execution requires multi-step construction → most regs stop at detection
+- B-X line exploit (BB calls wide + attacks river) works on junk-heavy boards (J56) but not medium-strength-heavy boards (QT3)
+- Key board read: does IP have a large medium-strength zone connecting with this board?
 
-**Next arc:**
-- Probe the distinction between "true GTO" (solver output, unexecutable) and "simple strategy that isn't exploitably bad" (the actual Layer 1 target)
-- Then move toward: what makes a baseline *good enough*, and how do you build it efficiently (Layer 1 build spot by spot)
-- Phase 3 will stress-test: when does even the baseline fail?
+**Next arc (Phase 3 — Stress test):**
+- Answer the unanswered question: quick mental heuristic for medium-strength zone at the table
+- Stress test: when does even the baseline fail?
+- Connect back to Layer 1 build process
 
 ---
 

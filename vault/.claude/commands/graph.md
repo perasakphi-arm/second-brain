@@ -21,17 +21,35 @@ QA_DIR: qa/
 GRAPH_FILE: meta/link-graph.json
 TOP_N: 5
 
+## Scope
+
+Only include **concept notes** — notes that represent reusable poker knowledge. Specifically, include only notes under:
+
+- `wiki/frameworks/`
+- `wiki/spots/`
+- `wiki/hands/`
+- `wiki/population/`
+- `wiki/villains/`
+- `wiki/concepts/`
+- `qa/`
+
+**Exclude** from graph (these are operational/organisational, not knowledge):
+- `wiki/sessions/` — session to-do checklists
+- `wiki/tasks/` — study task lists and progress trackers
+- `meta/` — auto-generated indexes
+
 ## Instructions
 
 - Read CLAUDE.md before doing anything else.
 - Build edges from both frontmatter links_out AND any [[...]] found in note bodies not already in links_out.
-- An orphan is any wiki/ note with ZERO inbound links from other wiki/ notes.
+- Only include edges where BOTH the source and target are in-scope concept notes. Drop any edge that points to or from a sessions/, tasks/, or meta/ note.
+- An orphan is any in-scope note with ZERO inbound links from other in-scope notes.
 - Write meta/link-graph.json — this file may be freely overwritten.
 
 ## Workflow
 
 1. Read CLAUDE.md to confirm invariants.
-2. Walk all .md files under wiki/ and qa/.
+2. Walk only the in-scope folders listed above.
 3. For each file:
    a. Read the frontmatter links_out field.
    b. Scan the body for any [[...]] links not already in links_out.

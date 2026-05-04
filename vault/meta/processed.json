@@ -14,7 +14,7 @@
     "ingested": "2026-04-16",
     "wiki_id": "concept/merge-betting"
   },
-  "57b9f3c94d6083dd74450a8c1ecc335145ba74c9d3caa6360ea79bb36903eb9d": {
+  "57b9f3c94d6083dd74450a8c1ecc335145ba74c9d3caa6360ea75b87950b85f9": {
     "file": "raw/4.6 Blocker and Equity.md",
     "ingested": "2026-04-16",
     "wiki_id": "concept/blocker-and-anti-blocker"
@@ -88,5 +88,15 @@
     "file": "raw/3BP OOP PFR Review.md",
     "ingested": "2026-05-02",
     "wiki_id": "hand/20260502-3bp-sb-kqhh-tc9h7h"
+  },
+  "45550493e10fe10584c2297c7edd0454fffb113734f1b7d80cd3cc5c3af8d5da": {
+    "file": "raw/BB defend vs EP.md",
+    "ingested": "2026-05-03",
+    "wiki_id": "hand/20260503-srp-bb-vs-ep-86s-qqx"
+  },
+  "af17b222637e29b9871242ef13e7f4401a05d27011e9665204c1671a736ed7c5": {
+    "file": "raw/3BP IP BBvSB.md",
+    "ingested": "2026-05-03",
+    "wiki_id": "hand/20260503-3bp-bb-vs-sb-aac-qc9c6h"
   }
 }

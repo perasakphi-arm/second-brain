@@ -1,0 +1,162 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Poker Study Plan 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Poker Schedule
+X-WR-TIMEZONE:Asia/Bangkok
+
+BEGIN:VTIMEZONE
+TZID:Asia/Bangkok
+BEGIN:STANDARD
+TZOFFSETFROM:+0700
+TZOFFSETTO:+0700
+TZNAME:ICT
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+
+BEGIN:VEVENT
+UID:poker-tue-study-20260505@poker
+SUMMARY:📖 Deep Study — Tony Clip + Raw Notes
+DESCRIPTION:Watch Tony clip for current spot (45-60min)\nWrite raw notes → drop in raw/\nReview key concepts
+DTSTART;TZID=Asia/Bangkok:20260505T173000
+DTEND;TZID=Asia/Bangkok:20260505T193000
+RRULE:FREQ=WEEKLY;BYDAY=TU
+CATEGORIES:Study
+COLOR:BLUE
+END:VEVENT
+
+BEGIN:VEVENT
+UID:poker-tue-session-20260505@poker
+SUMMARY:🃏 Poker Session — TUE (1h)
+DESCRIPTION:Focus: session-prep leak\nLog hands in daily note\nTag key hands for hand-review
+DTSTART;TZID=Asia/Bangkok:20260505T193000
+DTEND;TZID=Asia/Bangkok:20260505T203000
+RRULE:FREQ=WEEKLY;BYDAY=TU
+CATEGORIES:Poker
+COLOR:GREEN
+END:VEVENT
+
+BEGIN:VEVENT
+UID:poker-thu-recall-20260507@poker
+SUMMARY:🔁 Quick /recall — 15min
+DESCRIPTION:Run /recall for 10-15 questions\nLog score in weekly note
+DTSTART;TZID=Asia/Bangkok:20260507T173000
+DTEND;TZID=Asia/Bangkok:20260507T174500
+RRULE:FREQ=WEEKLY;BYDAY=TH
+CATEGORIES:Study
+COLOR:BLUE
+END:VEVENT
+
+BEGIN:VEVENT
+UID:poker-thu-session-20260507@poker
+SUMMARY:🃏 Poker Session — THU (1h)
+DESCRIPTION:Focus: session-prep leak\nLog hands in daily note\nMust end before 19:00 badminton
+DTSTART;TZID=Asia/Bangkok:20260507T174500
+DTEND;TZID=Asia/Bangkok:20260507T184500
+RRULE:FREQ=WEEKLY;BYDAY=TH
+CATEGORIES:Poker
+COLOR:GREEN
+END:VEVENT
+
+BEGIN:VEVENT
+UID:poker-fri-study-20260508@poker
+SUMMARY:📖 Ingest + Vault (1.5h)
+DESCRIPTION:Run /ingest on raw notes from TUE\nReview inbox draft, tag correctly\nRun /approve when ready
+DTSTART;TZID=Asia/Bangkok:20260508T173000
+DTEND;TZID=Asia/Bangkok:20260508T190000
+RRULE:FREQ=WEEKLY;BYDAY=FR
+CATEGORIES:Study
+COLOR:BLUE
+END:VEVENT
+
+BEGIN:VEVENT
+UID:poker-fri-session-20260508@poker
+SUMMARY:🃏 Poker Session — FRI (1.5h)
+DESCRIPTION:Focus: session-prep leak\nLog hands in daily note\nAfter weight training
+DTSTART;TZID=Asia/Bangkok:20260508T200000
+DTEND;TZID=Asia/Bangkok:20260508T213000
+RRULE:FREQ=WEEKLY;BYDAY=FR
+CATEGORIES:Poker
+COLOR:GREEN
+END:VEVENT
+
+BEGIN:VEVENT
+UID:poker-sat-session1-20260509@poker
+SUMMARY:🃏 Poker Session — SAT AM1 (1h45m)
+DESCRIPTION:Focus: session-prep leak\nLog hands in daily note
+DTSTART;TZID=Asia/Bangkok:20260509T090000
+DTEND;TZID=Asia/Bangkok:20260509T104500
+RRULE:FREQ=WEEKLY;BYDAY=SA
+CATEGORIES:Poker
+COLOR:GREEN
+END:VEVENT
+
+BEGIN:VEVENT
+UID:poker-sat-handreview-20260509@poker
+SUMMARY:📖 Hand Review (1h15m)
+DESCRIPTION:Review 3-5 key hands from TUE/THU/FRI sessions\nTag notable hands for /hand-review\nUpdate wiki/hands/
+DTSTART;TZID=Asia/Bangkok:20260509T104500
+DTEND;TZID=Asia/Bangkok:20260509T120000
+RRULE:FREQ=WEEKLY;BYDAY=SA
+CATEGORIES:Study
+COLOR:BLUE
+END:VEVENT
+
+BEGIN:VEVENT
+UID:poker-sat-session2-20260509b@poker
+SUMMARY:🃏 Poker Session — SAT PM (1h)
+DESCRIPTION:Focus: session-prep leak\nLog hands in daily note
+DTSTART;TZID=Asia/Bangkok:20260509T130000
+DTEND;TZID=Asia/Bangkok:20260509T140000
+RRULE:FREQ=WEEKLY;BYDAY=SA
+CATEGORIES:Poker
+COLOR:GREEN
+END:VEVENT
+
+BEGIN:VEVENT
+UID:poker-sat-admin-20260509@poker
+SUMMARY:📖 Admin + Session Prep (1h)
+DESCRIPTION:Run /session-prep for evening session\n/approve any pending inbox drafts\nUpdate master-todo checkboxes
+DTSTART;TZID=Asia/Bangkok:20260509T150000
+DTEND;TZID=Asia/Bangkok:20260509T160000
+RRULE:FREQ=WEEKLY;BYDAY=SA
+CATEGORIES:Study
+COLOR:BLUE
+END:VEVENT
+
+BEGIN:VEVENT
+UID:poker-sat-session3-20260509c@poker
+SUMMARY:🃏 Poker Session — SAT EVE (1h)
+DESCRIPTION:Focus: session-prep leak\nLog hands in daily note
+DTSTART;TZID=Asia/Bangkok:20260509T190000
+DTEND;TZID=Asia/Bangkok:20260509T200000
+RRULE:FREQ=WEEKLY;BYDAY=SA
+CATEGORIES:Poker
+COLOR:GREEN
+END:VEVENT
+
+BEGIN:VEVENT
+UID:poker-sun-session-20260510@poker
+SUMMARY:🃏 Poker Session — SUN AM (1h)
+DESCRIPTION:Focus: session-prep leak\nLog hands in daily note
+DTSTART;TZID=Asia/Bangkok:20260510T093000
+DTEND;TZID=Asia/Bangkok:20260510T103000
+RRULE:FREQ=WEEKLY;BYDAY=SU
+CATEGORIES:Poker
+COLOR:GREEN
+END:VEVENT
+
+BEGIN:VEVENT
+UID:poker-sun-weekreview-20260510@poker
+SUMMARY:📖 Week Review + Plan Next Week (1.5h)
+DESCRIPTION:Review all sessions from the week\nUpdate hand count tracker\nPlan next week: confirm current spot, check recall due dates\nLog week summary in weekly note
+DTSTART;TZID=Asia/Bangkok:20260510T103000
+DTEND;TZID=Asia/Bangkok:20260510T120000
+RRULE:FREQ=WEEKLY;BYDAY=SU
+CATEGORIES:Study
+COLOR:BLUE
+END:VEVENT
+
+END:VCALENDAR

@@ -8,7 +8,7 @@ sources:
 aliases: [srp bb defend mistakes, BB defend flop errors, srp oop pfc mistakes]
 created: 2026-05-01
 updated: 2026-05-01
-links_out: [spot/srp-oop-pfc-bb-defend-flop, tasks/srp-oop-pfc-bb-defend-study-tasks, spots/3bp-oop-pfr-flop-key-mistakes]
+links_out: [spot/srp-oop-pfc-bb-defend-flop, tasks/srp-oop-pfc-bb-defend-study-tasks, spots/3bp-oop-pfr-flop-key-mistakes, concept/srp-oop-cr-combo-selection-paired-board-vs-ep]
 ---
 
 # SRP OOP PFC (BB Defend) — Key Mistakes on the Flop
@@ -132,3 +132,4 @@ Hand 8 (Q52 rb / J6 bdfd): Tony's proper check-raise combos for aggressive range
 - [[spot/srp-oop-pfc-bb-defend-flop|BB Defend Flop Strategy]] — the foundational strategy these mistakes violate
 - [[tasks/srp-oop-pfc-bb-defend-study-tasks|BB Defend Study Tasks]] — structured drills to fix each mistake
 - [[spots/3bp-oop-pfr-flop-key-mistakes|3BP OOP PFR Key Mistakes]] — parallel mistake analysis for the 3BP OOP PFR spot
+- [[concept/srp-oop-cr-combo-selection-paired-board-vs-ep|CR Combo Selection on Paired Boards vs EP]] — extension of Mistake 4: on paired boards vs EP, check-raise only with flush draw combos (matching board suit); wrong suit bdfd = insufficient vs tighter EP range

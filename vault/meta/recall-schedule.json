@@ -1,0 +1,461 @@
+{
+  "population/fish-srp-ip-pfr-001": {
+    "id": "population/fish-srp-ip-pfr-001",
+    "title": "Fish Read — River Over-Bluff at Small Size (SRP IP PFR)",
+    "category": "population-data",
+    "source": "wiki/population/fish-exploit-data-srp-ip-pfr.md",
+    "questions": {
+      "application": "SRP, IP PFR vs fish. Flop you cbet, fish calls. Turn fish checks, you check back. River fish bets 60% pot. You have Kx top pair good kicker. What do you do and why?",
+      "why": "Why do fish over-bluff at small river sizes but tend to have value at larger sizes (75%+ pot)? What does their sizing logic reveal about hand strength distribution?",
+      "recall": "State the fish river bluff tendency and the correct exploitation in one sentence."
+    },
+    "answer": "Fish over-bluff at ≤75% pot sizes on the river. Counter: hero-call vs small/medium river bets. Fish's larger bets (75%+ pot) skew toward value — tighten call range at big sizes.",
+    "interval": 1,
+    "next_review": "2026-05-05",
+    "history": [
+      { "date": "2026-05-04", "result": "partial", "question_type": "application" }
+    ]
+  },
+  "population/fish-srp-ip-pfr-002": {
+    "id": "population/fish-srp-ip-pfr-002",
+    "title": "Fish Read — B-X-F Over-Fold Pattern (SRP IP PFR)",
+    "category": "population-data",
+    "source": "wiki/population/fish-exploit-data-srp-ip-pfr.md",
+    "questions": {
+      "application": "SRP IP PFR. Fish calls your flop cbet, then checks the turn. You check back turn. River blanks. What is your default action and why?",
+      "why": "Why does fish over-fold to river bets after the B-X-F line? What does fish checking the turn communicate about their hand strength?",
+      "recall": "State the fish B-X-F over-fold tendency and the correct exploitation in one sentence."
+    },
+    "answer": "Fish over-fold by ~5% on river after Bet-flop → Check-turn → Bet-river (B-X-F pattern). Exploit: barrel river after fish checks turn. Fish checked turn because they had medium strength — they fold too often to river pressure.",
+    "interval": 1,
+    "next_review": "2026-05-05",
+    "history": [
+      { "date": "2026-05-04", "result": "partial", "question_type": "application" }
+    ]
+  },
+  "population/fish-srp-ip-pfr-003": {
+    "id": "population/fish-srp-ip-pfr-003",
+    "title": "Fish Read — Over-Call Check-Raises (SRP)",
+    "category": "population-data",
+    "source": "wiki/population/fish-exploit-data-srp-ip-pfr.md",
+    "questions": {
+      "application": "SRP IP PFR. Fish is in the BB. Board 8s6s8c. Fish check-raises your cbet. You have a flush draw (decent equity but no made hand). Should you continue as a bluff-raise or give up? Why?",
+      "why": "Why does fish over-calling check-raises mean you should use value-only check-raises vs fish? What breaks if you include bluff check-raises?",
+      "recall": "State the fish check-raise calling tendency and the correct adjustment in one sentence."
+    },
+    "answer": "Fish over-call check-raises on the flop — they call too liberally. Counter: value-only check-raises vs fish; reduce bluff check-raises. Fish's wide call range means bluff check-raises have poor fold equity and are negative EV.",
+    "interval": 1,
+    "next_review": "2026-05-05",
+    "history": [
+      { "date": "2026-05-04", "result": "fail", "question_type": "application" }
+    ]
+  },
+  "population/villain-fish-utg-001": {
+    "id": "population/villain-fish-utg-001",
+    "title": "Villain Fish UTG — 3-Street Donk = Value, Not Bluff",
+    "category": "population-data",
+    "source": "wiki/villains/villain-profile-fish-utg.md",
+    "questions": {
+      "application": "3BP, BU hero vs Fish UTG. Flop 8s6s8c, fish donks 40% pot. Turn 9s, fish blocks again. River Js (flush completes), fish bets 50% pot. You have two pair (6s and 8s). Do you call, raise, or fold the river?",
+      "why": "Why does fish's 3-street donk-lead represent value rather than a bluff? What is fish doing on each street of the donk-lead line?",
+      "recall": "State the rule for fish's 3-street donk-lead pattern in one sentence."
+    },
+    "answer": "Fish's 3-street donk-lead is a VALUE pattern, not a bluff. Each street escalation = hand improved (observed: T9o → pair of 9s + 4-flush → J-high flush). Do NOT bluff into 3-street fish aggression. Fold non-nut hands when fish leads 3 streets into a completed draw board. River: fish bets Js board after leading 3 streets = likely made flush → fold two pair.",
+    "interval": 1,
+    "next_review": "2026-05-05",
+    "history": [
+      { "date": "2026-05-04", "result": "partial", "question_type": "application" }
+    ]
+  },
+  "population/villain-fish-utg-002": {
+    "id": "population/villain-fish-utg-002",
+    "title": "Villain Fish UTG — Almost Never 4-Bets → 3-Bet Wider",
+    "category": "population-data",
+    "source": "wiki/villains/villain-profile-fish-utg.md",
+    "questions": {
+      "application": "You 3-bet from BU vs Fish UTG opener. Fish calls. No 4-bet. You made a marginal 3-bet with A7s (borderline normally). Is this 3-bet more profitable vs this fish than vs an average reg? Why?",
+      "why": "Why does fish's near-zero 4-bet frequency make your 3-bet range wider profitable? What is the residual risk of 3-betting wider?",
+      "recall": "State the fish 4-bet tendency and how to adjust your 3-bet range in one sentence."
+    },
+    "answer": "Fish almost never 4-bets — even AA and KK are called at high frequency (AA=0.08 call, KK=0.18 call rather than 4-bet). Hero can 3-bet wider vs this player since the response is mostly call, not 4-bet. Residual risk: fish calls with a wide range including speculative hands — you need to outplay postflop, not just steal preflop.",
+    "interval": 2,
+    "next_review": "2026-05-06",
+    "history": [
+      { "date": "2026-05-04", "result": "pass", "question_type": "application" }
+    ]
+  },
+  "population/3bp-bu-vs-sb-t-high-001": {
+    "id": "population/3bp-bu-vs-sb-t-high-001",
+    "title": "3BP BU vs SB T-High — SB 50% Bet = Capped Range → Raise 2.5x",
+    "category": "population-data",
+    "source": "wiki/spots/3bp-bu-vs-sb-t-high-exploit.md",
+    "questions": {
+      "application": "3BP, BU (IP, PFC) vs SB (OOP, PFR). Flop T52r. SB bets 50% pot. You have a flush draw + overcard. What is your exploit action and sizing?",
+      "why": "Why does SB betting 50% on a T-high flop create a capped range? Why can't SB 3-bet back if you raise?",
+      "recall": "State the exploit action vs SB 50% bet on T-high 3BP flop in one sentence."
+    },
+    "answer": "SB's 50% bet on T-high 3BP flop = capped, wide range. Tony's correct SB strategy checks AA, top set, AQ, AJ, KQs — but SB bets these, so betting range lacks nuts. Counter: raise 2.5x (pot-sized). SB cannot 3-bet back — no nutted hands in their betting range. With flush draw + overcard: semi-bluff raise is ideal.",
+    "interval": 1,
+    "next_review": "2026-05-05",
+    "history": [
+      { "date": "2026-05-04", "result": "partial", "question_type": "application" }
+    ]
+  },
+  "population/3bp-bu-vs-sb-t-high-002": {
+    "id": "population/3bp-bu-vs-sb-t-high-002",
+    "title": "3BP BU vs SB T-High — After Flop Bet + Checked Turn → Probe 60-70%",
+    "category": "population-data",
+    "source": "wiki/spots/3bp-bu-vs-sb-t-high-exploit.md",
+    "questions": {
+      "application": "3BP, BU (IP) vs SB (OOP). T52r flop. You call SB's 50% flop bet. Turn blanks (3c), SB checks. You have 76s (gutshot + bdfd — no made hand). What do you do and why?",
+      "why": "Why do you probe wide on the turn after SB bets flop and checks turn in 3BP T-high? What is SB's range doing that makes them vulnerable?",
+      "recall": "State the turn probe rule vs SB in 3BP T-high after flop bet + checked turn in one sentence."
+    },
+    "answer": "After SB bets 50% flop and checks turn, SB's remaining range is medium-strength (AQ, AJ, KQs — now uncomfortable bluff catchers). Probe wide 60-70% pot with made hands, draws, and some air. SB cannot call with medium hands that are now indifferent. If SB bets turn → respect strength, narrow continuing range. With 76s: probe — gutshot has equity when called, and fold equity vs medium hands is high.",
+    "interval": 1,
+    "next_review": "2026-05-05",
+    "history": [
+      { "date": "2026-05-04", "result": "partial", "question_type": "application" }
+    ]
+  },
+  "poker/srp-bb-defend-mistakes-001": {
+    "id": "poker/srp-bb-defend-mistakes-001",
+    "title": "SRP BB Defend M1 — bdfd + Protection Need → Check-Raise, Not Check-Call",
+    "category": "poker-knowledge",
+    "source": "wiki/spots/srp-oop-pfc-bb-defend-mistakes.md",
+    "questions": {
+      "application": "SRP OOP BB defend. Board J56 flush draw. IP cbets small (33%). You hold 53 with backdoor flush draw. Ask the 3-question check: (a) IP over-cbets? Yes. (b) Protection needed? Yes. (c) Bluff ability later? Yes. What do you do?",
+      "why": "Why is check-raising better than check-calling when you hold bdfd + need protection vs IP over-cbet? What does check-calling cost you?",
+      "recall": "State the Mistake 1 rule (bdfd + protection) in one sentence."
+    },
+    "answer": "bdfd + protection needed + IP over-cbets → check-raise, NOT check-call. Check-raising denies equity to IP's overcards, builds pot, and uses bdfd as bluff fuel on later streets. Check-calling concedes initiative and lets IP realize equity for free. Hands 1,2,6,9,11 all had this pattern — all were check-call errors.",
+    "interval": 2,
+    "next_review": "2026-05-06",
+    "history": [
+      { "date": "2026-05-04", "result": "pass", "question_type": "application" }
+    ]
+  },
+  "poker/srp-bb-defend-mistakes-002": {
+    "id": "poker/srp-bb-defend-mistakes-002",
+    "title": "SRP BB Defend M2 — Strong Value Hand on Connected Board → Check-Raise",
+    "category": "poker-knowledge",
+    "source": "wiki/spots/srp-oop-pfc-bb-defend-mistakes.md",
+    "questions": {
+      "application": "SRP OOP BB defend. Board 853 rainbow. IP cbets. You have A8o (top pair). What's the correct line? (This is Hand 3 in the mistakes analysis.)",
+      "why": "Why should strong value hands (top pair, strong mid-pair) on connected boards check-raise rather than check-call in the BB defend? What are the two costs of check-calling with a value hand?",
+      "recall": "State the Mistake 2 rule (value hand placed in bluff-catch) in one sentence."
+    },
+    "answer": "Strong made hands (top pair or better) that need protection on connected boards → check-raise for value + protection, NOT check-call. Two costs of check-calling: (a) lets draws realize equity cheaply, (b) loses value when IP checks behind on turn. Hand 3: A8o on 853r is a check-raise, not a bluff-catch.",
+    "interval": 1,
+    "next_review": "2026-05-05",
+    "history": [
+      { "date": "2026-05-04", "result": "partial", "question_type": "application" }
+    ]
+  },
+  "poker/srp-bb-defend-mistakes-003": {
+    "id": "poker/srp-bb-defend-mistakes-003",
+    "title": "SRP BB Defend M3 — bdfd = Perfect Bluff Candidate → Check-Raise Bluff",
+    "category": "poker-knowledge",
+    "source": "wiki/spots/srp-oop-pfc-bb-defend-mistakes.md",
+    "questions": {
+      "application": "SRP OOP BB defend. Board 993 flush draw. You hold J7 with backdoor flush draw. IP cbets. Should J7 bdfd go in the check-raise or check-call range? Name three properties that make bdfd a 'perfect bluff.'",
+      "why": "Why is bdfd the ideal check-raise bluff vs IP over-cbets? Why is check-calling with bdfd a mistake even though it has some equity?",
+      "recall": "State the Mistake 3 rule (bdfd = bluff candidate, not bluff-catch) in one sentence."
+    },
+    "answer": "bdfd + overcard + pool over-cbets → check-raise bluff, NOT check-call. Three properties of bdfd as perfect bluff: (a) blocks IP's flush draw holdings, (b) picks up equity when called (flush draw on turn), (c) can barrel later streets. Hand 4: J7 bdfd on 993fd → XR. Hand 10: Q3 bdfd on 972r → XR. Never check-call these.",
+    "interval": 1,
+    "next_review": "2026-05-05",
+    "history": [
+      { "date": "2026-05-04", "result": "partial", "question_type": "application" }
+    ]
+  },
+  "poker/srp-bb-defend-mistakes-004": {
+    "id": "poker/srp-bb-defend-mistakes-004",
+    "title": "SRP BB Defend M4 — Canonical Check-Raise Combos for Q52-Type Boards",
+    "category": "poker-knowledge",
+    "source": "wiki/spots/srp-oop-pfc-bb-defend-mistakes.md",
+    "questions": {
+      "application": "SRP OOP BB defend. Board Q52 rainbow. IP cbets. You hold J6 with bdfd — not in Tony's canonical list. What should you use instead? List Tony's 7 canonical combos for this texture.",
+      "why": "Why does using the wrong check-raise combo (J6 instead of the canonical list) create a range architecture problem? What does Tony's list optimize for?",
+      "recall": "List Tony's 7 canonical check-raise combos for Q52-type boards."
+    },
+    "answer": "Tony's canonical check-raise combos for Q52-type boards: 53, A4, A3, 65, 75, 43, K3. Hand 8: J6 bdfd is NOT in this list — using it breaks range architecture because the correct GTO-aligned combos are omitted. Tony's list optimizes for: blockers to IP's continuing range + equity when called + natural barrel exits on favorable turn cards.",
+    "interval": 1,
+    "next_review": "2026-05-05",
+    "history": [
+      { "date": "2026-05-04", "result": "partial", "question_type": "application" }
+    ]
+  },
+  "poker/3bp-oop-pfr-mistakes-001": {
+    "id": "poker/3bp-oop-pfr-mistakes-001",
+    "title": "3BP OOP PFR M1 — Drawy Board + Strong Value → Bet 87%+ Pot",
+    "category": "poker-knowledge",
+    "source": "wiki/spots/3bp-oop-pfr-flop-key-mistakes.md",
+    "questions": {
+      "application": "3BP OOP PFR. Flop K93 flush draw. You hold AK (top pair top kicker). What bet size do you use and what is your plan for the turn? (This is the Mistake 1 pattern.)",
+      "why": "Why must you bet big (87%+ pot) on a drawy board with strong value in 3BP? What goes wrong if you bet small (33-50%)?",
+      "recall": "State the Mistake 1 rule (bet sizing on drawy boards with strong value) in one sentence."
+    },
+    "answer": "On drawy boards (flush draw / connected) with strong top pair or better in 3BP OOP → bet big (87%+ pot) + plan to jam/shove turn. Betting small: (a) loses stack building, (b) lets draws realize equity cheaply, (c) misses the window to get value before the draw completes. Hands 2, 6, 9: AK on K93fd, AQo on AJ4fd, AJ on AJ6fd — all required big size + jam turn.",
+    "interval": 1,
+    "next_review": "2026-05-05",
+    "history": [
+      { "date": "2026-05-04", "result": "partial", "question_type": "application" }
+    ]
+  },
+  "poker/3bp-oop-pfr-mistakes-002": {
+    "id": "poker/3bp-oop-pfr-mistakes-002",
+    "title": "3BP OOP PFR M2 — Safe Turn (IP Bets Kx/Ax Anyway) → Check",
+    "category": "poker-knowledge",
+    "source": "wiki/spots/3bp-oop-pfr-flop-key-mistakes.md",
+    "questions": {
+      "application": "3BP OOP PFR. Board KT9 flush draw → turn Kd (safe card). You have 99 (mid set). IP will bet Kx/Ax into you if you check. Should you bet the turn for value or check? Why?",
+      "why": "Why is checking better than betting a set/overpair on the turn when IP will bet Kx/Ax regardless? What does betting cost you that checking preserves?",
+      "recall": "State the Mistake 2 rule (fast play value that needs no protection) in one sentence."
+    },
+    "answer": "When IP will bet Kx/Ax regardless, checking costs no EV but gains: IP's bluff combos remain in (folding them out by betting = lost value). Rule: ask 'Does my hand need protection here?' If no → check and let bluffs come to you. Hand 4: 99 on KT9→Kd; Hand 7: 77 on Q72→turn; Hand 8: AA on A94 — all should check turn. Betting folds out 0-equity hands that would otherwise put money in.",
+    "interval": 1,
+    "next_review": "2026-05-05",
+    "history": [
+      { "date": "2026-05-04", "result": "partial", "question_type": "application" }
+    ]
+  },
+  "poker/3bp-oop-pfr-mistakes-003": {
+    "id": "poker/3bp-oop-pfr-mistakes-003",
+    "title": "3BP OOP PFR M3 — Mid-Strength vs 0-Equity Region → Block Bet 33-50%",
+    "category": "poker-knowledge",
+    "source": "wiki/spots/3bp-oop-pfr-flop-key-mistakes.md",
+    "questions": {
+      "application": "3BP OOP PFR. Board QQ7 → turn 7. You have 88 (mid-strength pocket pair). IP has many 0-equity hands (pocket pairs with no equity, high cards that missed). What do you do on the turn and why?",
+      "why": "Why should you block bet (33-50%) instead of checking when you have mid-strength vs opponent's 0-equity region? What does checking give away for free?",
+      "recall": "State the Mistake 3 rule (not blocking to prevent 0-EV) in one sentence."
+    },
+    "answer": "When holding mid-strength vs opponent's 0-equity region → block bet 33-50% pot. Without a block bet, opponent's marginal holdings have 0 EV — they fold or check back for free. A small bet forces them to call and put money in with marginal hands. Hand 14: 88 on QQ7→7; Hand 18: TT on J73→Ah; Hand 20: JJ6→7h — all needed block bets rather than checks.",
+    "interval": 2,
+    "next_review": "2026-05-06",
+    "history": [
+      { "date": "2026-05-04", "result": "pass", "question_type": "application" }
+    ]
+  },
+  "poker/3bp-oop-pfr-mistakes-004": {
+    "id": "poker/3bp-oop-pfr-mistakes-004",
+    "title": "3BP OOP PFR M4 — Big Draw + Can't Bet-Call Jam → Check-Raise All-In",
+    "category": "poker-knowledge",
+    "source": "wiki/spots/3bp-oop-pfr-flop-key-mistakes.md",
+    "questions": {
+      "application": "3BP OOP PFR. Flop QT7 flush draw. You hold J9 (gutshot + flush draw). Stack depth means you cannot comfortably bet-call a jam. What is your correct line and why?",
+      "why": "Why is check-raise all-in better than a straight bet with a big draw when you can't bet-call a jam? What does check-raise accomplish that straight betting does not?",
+      "recall": "State the Mistake 4 rule (big draw equity realization) in one sentence."
+    },
+    "answer": "Big draw equity realization = check-raise all-in when the bet-call-jam line is not achievable. Straight betting creates a leak: if you can't call a jam, you face a lose-lose (fold your draw or call off badly). Check-raise all-in: (a) forces fold equity on the flop, (b) retains full draw equity when called. Hand 11: J9 gutshot + flush draw on QT7 flush → check-raise all-in.",
+    "interval": 1,
+    "next_review": "2026-05-05",
+    "history": [
+      { "date": "2026-05-04", "result": "fail", "question_type": "application" }
+    ]
+  },
+  "poker/3bp-oop-pfr-mistakes-005": {
+    "id": "poker/3bp-oop-pfr-mistakes-005",
+    "title": "3BP OOP PFR M5 — Favorable Turn + Equity Hand → C-Bet 50%",
+    "category": "poker-knowledge",
+    "source": "wiki/spots/3bp-oop-pfr-flop-key-mistakes.md",
+    "questions": {
+      "application": "3BP OOP PFR. Flop A73 → turn T. You hold J9 (gutshot). IP has many pocket pairs in their range (44-99 with no top pair). What do you do on the turn?",
+      "why": "Why c-bet ~50% pot with a gutshot on a favorable turn (A73→T) instead of checking? What does the c-bet accomplish that checking misses?",
+      "recall": "State the Mistake 5 rule (no c-bet turn with equity hand on favorable turn) in one sentence."
+    },
+    "answer": "Equity hand (gutshot, partial draw) on a favorable turn (one that improves your range more than IP's) → c-bet ~50% pot. The c-bet: (a) pressures IP's pocket pair region to fold, (b) retains pot odds when called (gutshot has equity). Hand 15: J9 gutshot on A73→T — c-bet 50% attacks pocket pairs 44-99 that have no equity to continue profitably.",
+    "interval": 2,
+    "next_review": "2026-05-06",
+    "history": [
+      { "date": "2026-05-04", "result": "pass", "question_type": "application" }
+    ]
+  },
+  "poker/srp-oop-cr-ep-001": {
+    "id": "poker/srp-oop-cr-ep-001",
+    "title": "SRP OOP — Paired Board vs EP: Check-Raise Only with Board-Suit Flush Draw",
+    "category": "poker-knowledge",
+    "source": "wiki/spots/srp-oop-cr-combo-selection-paired-board-vs-ep.md",
+    "questions": {
+      "application": "SRP OOP BB defend. Board QsQh6h. EP cbets 33%. You hold 8s6s (second pair + spades bdfd). Do you check-raise? If not, what combo would you need to check-raise here?",
+      "why": "Why must you use a flush draw matching the board suit (hearts) for a check-raise vs EP on QsQh6h, rather than second pair + bdfd in the wrong suit? What happens when you check-raise with 8s6s here?",
+      "recall": "State the rule for check-raise combo selection on paired boards vs EP in one sentence."
+    },
+    "answer": "On paired boards (QQx) vs EP c-bet small: check-raise only with flush draw combos matching the board suit (e.g., Ah6h, Kh6h on QsQh6h). Do NOT check-raise with second pair + bdfd in the wrong suit (8s6s on a heart board — spades bdfd = zero live equity). EP's tighter range calls XR with stronger hands; you need live draw equity to survive a turn barrel. vs BU → wider XR range OK; vs EP → shrink to board-suit flush draws + value.",
+    "interval": 1,
+    "next_review": "2026-05-05",
+    "history": [
+      { "date": "2026-05-04", "result": "partial", "question_type": "application" }
+    ]
+  },
+  "poker/3bp-ip-overpair-checkjam-001": {
+    "id": "poker/3bp-ip-overpair-checkjam-001",
+    "title": "3BP IP PFR — Overpair + Flush Blocker vs Check-Jam: Call When Equity ≥50%",
+    "category": "poker-knowledge",
+    "source": "wiki/spots/3bp-ip-pfr-overpair-flush-blocker-vs-checkjam.md",
+    "questions": {
+      "application": "3BP, BB (IP, 3-bettor) vs SB (OOP). SPR ~3.5. Flop Qc9c6h. SB checks, you bet, SB check-jams. You hold AsAc. Pot odds require ~38% equity. Do you call? How does Ac help your equity?",
+      "why": "Why does holding Ac on a club board improve your equity vs villain's check-jam range? Why is losing to KsQs (if villain shows up with that) not evidence the call was wrong?",
+      "recall": "State the rule for overpair + flush blocker vs check-jam in 3BP in one sentence."
+    },
+    "answer": "Call check-jam with overpair + flush blocker on draw-heavy 3BP board when equity ≥50% vs realistic range. AsAc: Ac removes AcKc, AcQc from villain's flush draw combos → villain's range skews draw-heavy. Equity ~51.55% vs KQ/AQ + sets + flush draws. Pot odds ~38% → profitable call. Losing to KsQs = bad variance, not a bad call — evaluate vs full distribution of villain's check-jam range.",
+    "interval": 1,
+    "next_review": "2026-05-05",
+    "history": [
+      { "date": "2026-05-04", "result": "fail", "question_type": "application" }
+    ]
+  },
+  "poker/three-layers-001": {
+    "id": "poker/three-layers-001",
+    "title": "Three Layers — Layer 1: Defensive Baseline (C-Game)",
+    "category": "poker-knowledge",
+    "source": "wiki/frameworks/three-layers-poker-strategy.md",
+    "questions": {
+      "application": "You're 5 hours into a session, energy is low, and you're playing an unknown strong reg. Which strategy layer should you default to? What does 'playing not bad' mean in practice for BUvBB SRP?",
+      "why": "Why must Layer 1 be built before Layer 2 or 3? What happens to players who skip Layer 1 and go directly to exploit plays?",
+      "recall": "Describe Layer 1 in one sentence, including its goal and when to use it."
+    },
+    "answer": "Layer 1 = Defensive Baseline. Goal: improve C-Game (play 'not bad' rather than perfect). Use vs strong players, unknown opponents, low-energy spots, or time pressure. Build one spot at a time (BUvBB SRP IP PFR first), complete it, then next spot. Without Layer 1, Layer 3 creative plays have no foundation — this creates 'fancy play syndrome.'",
+    "interval": 1,
+    "next_review": "2026-05-05",
+    "history": [
+      { "date": "2026-05-04", "result": "fail", "question_type": "application" }
+    ]
+  },
+  "poker/three-layers-002": {
+    "id": "poker/three-layers-002",
+    "title": "Three Layers — Layer 2: Population Exploit (B-Game)",
+    "category": "poker-knowledge",
+    "source": "wiki/frameworks/three-layers-poker-strategy.md",
+    "questions": {
+      "application": "You identify that the pool over-folds the river line XC→X→B33 on K65r (river bet after checking twice). What is your Layer 2 adjustment at each earlier street, and what is the 'ripple effect'?",
+      "why": "Why must population data be reliable before applying Layer 2 adjustments? What is the key failure mode of Layer 2?",
+      "recall": "Describe Layer 2 in one sentence, including its goal and data requirement."
+    },
+    "answer": "Layer 2 = Offensive Adjustment. Goal: improve B-Game. Uses population tendencies to deviate from Layer 1. Key: ripple-effect adjustments (pool over-folds river XC→X→B33 → adjust flop to Bet-small to set up that river). Key failure mode: making fancy adjustments based on insufficient or unreliable data. Use only when you have solid pool-level data on a specific leak.",
+    "interval": 1,
+    "next_review": "2026-05-05",
+    "history": [
+      { "date": "2026-05-04", "result": "partial", "question_type": "application" }
+    ]
+  },
+  "poker/three-layers-003": {
+    "id": "poker/three-layers-003",
+    "title": "Three Layers — Layer 3: In-Game Individual Exploit (A-Game)",
+    "category": "poker-knowledge",
+    "source": "wiki/frameworks/three-layers-poker-strategy.md",
+    "questions": {
+      "application": "Midway through a session you identify Fish UTG as someone who never folds a made hand to a river jam. What layer is this? When should you engage vs disengage Layer 3?",
+      "why": "Why can't Layer 3 be sustained the entire session? What happens to yearly EV if you rely only on Layer 3 without Layer 1?",
+      "recall": "Describe Layer 3 in one sentence, including its goal, cost, and appropriate use."
+    },
+    "answer": "Layer 3 = In-Game Individual Exploit. Goal: improve A-Game, enter Flow State. Attacks individual players based on specific real-time reads; may deviate entirely from Layers 1 and 2. Mindset: 'Can I...?' Highest mental energy — cannot be sustained all session. Over-relying on Layer 3 without Layer 1 burns out faster and reduces hands played optimally per year.",
+    "interval": 1,
+    "next_review": "2026-05-05",
+    "history": [
+      { "date": "2026-05-04", "result": "partial", "question_type": "application" }
+    ]
+  },
+  "poker/why-mindset-001": {
+    "id": "poker/why-mindset-001",
+    "title": "Why Mindset — Isolate Ingredient, Find Cause, Write Cause-Effect Rule",
+    "category": "poker-knowledge",
+    "source": "wiki/frameworks/why-mindset-reverse-engineering.md",
+    "questions": {
+      "application": "You're studying a solver output: on T52r, AA checks at 80% frequency. Instead of memorizing that, how do you apply the Why Mindset? Walk through the 5-step reverse-engineering process.",
+      "why": "Why does What Mindset (memorizing frequencies) break down in real games when an ingredient changes? Give a concrete example.",
+      "recall": "State the Why Mindset study method in one sentence."
+    },
+    "answer": "Why Mindset: for every strategy, ask 'What ingredient is causing this?' Then: (1) Pick the spot, (2) isolate one ingredient — change only that, (3) observe what shifts in strategy, (4) write cause-effect rule: 'Ingredient X causes Y,' (5) repeat per ingredient. What Mindset fails when an ingredient changes (villain's range differs from GTO) — you memorized the output, not the cause, so you can't adjust.",
+    "interval": 1,
+    "next_review": "2026-05-05",
+    "history": [
+      { "date": "2026-05-04", "result": "partial", "question_type": "application" }
+    ]
+  },
+  "poker/ingredient-001": {
+    "id": "poker/ingredient-001",
+    "title": "Ingredient Analysis — SPR Affects Hand Groups (Which Hands to Bet)",
+    "category": "poker-knowledge",
+    "source": "wiki/frameworks/ingredient-cause-effect-analysis.md",
+    "questions": {
+      "application": "You're in a 3BP (lower SPR ~3 vs SRP ~8). How does the lower SPR change which hands you bet on the flop? Specifically: does top pair bet more or less aggressively vs SRP, and why?",
+      "why": "Why does SPR affect which hands to bet (hand groups) rather than how often you bet (frequency)? Why do draws check back IP at very short SPR?",
+      "recall": "State the SPR ingredient's causal effect on poker strategy in one sentence."
+    },
+    "answer": "SPR → affects hand groups (which hands to bet), not primarily frequency. Deep SPR: top pair checks (vulnerable, needs protection over many streets); draws bet IP. Short SPR: top pair bets more aggressively (easy to stack off); draws check back IP (BB check-raises aggressively at low SPR — draws can't realize equity if raised). Applied: 3BP top pair bets more than SRP top pair.",
+    "interval": 1,
+    "next_review": "2026-05-05",
+    "history": [
+      { "date": "2026-05-04", "result": "partial", "question_type": "application" }
+    ]
+  },
+  "poker/ingredient-002": {
+    "id": "poker/ingredient-002",
+    "title": "Ingredient Analysis — Range Composition (Air) Affects Bet Frequency",
+    "category": "poker-knowledge",
+    "source": "wiki/frameworks/ingredient-cause-effect-analysis.md",
+    "questions": {
+      "application": "Comparing BUvBB SRP IP PFR (wide BU range) vs EPvBB SRP IP PFR (tight EP range). How does range composition change your cbet frequency? Does it change which hands you cbet with?",
+      "why": "Why does more air in a range increase cbet frequency, while hand groups stay the same? What would happen to EV if you used BU's high cbet frequency with EP's tight range?",
+      "recall": "State the range-composition ingredient's causal effect on poker strategy in one sentence."
+    },
+    "answer": "Range composition (air content) → affects how often you bet (frequency), NOT which hands you bet (hand groups stay same). Wide range = more air = higher cbet frequency. Tight range = less air = lower cbet frequency. Applied: BU cbets more often than EP not because different hand groups, but because BU has more bluff combos. Using BU frequency with EP range = over-bluffing with insufficient air = negative EV.",
+    "interval": 1,
+    "next_review": "2026-05-05",
+    "history": [
+      { "date": "2026-05-04", "result": "partial", "question_type": "application" }
+    ]
+  },
+  "poker/ingredient-003": {
+    "id": "poker/ingredient-003",
+    "title": "Ingredient Analysis — Board Texture Affects Both Frequency AND Sizing",
+    "category": "poker-knowledge",
+    "source": "wiki/frameworks/ingredient-cause-effect-analysis.md",
+    "questions": {
+      "application": "You move from studying K73 rainbow to K73 with a flush draw. How does adding the flush draw change your strategy — specifically: does it change bet frequency, sizing, or both? Give an example of a hand that shifts.",
+      "why": "Why does board texture affect both frequency and sizing while SPR only affects hand groups and range only affects frequency? What makes board texture a 'compound' ingredient?",
+      "recall": "State the board texture ingredient's causal effect on poker strategy in one sentence."
+    },
+    "answer": "Board texture → affects both bet frequency AND sizing simultaneously (compound ingredient). Adding flush draw to K73: (a) frequency shifts — more hands need protection + more bluff combos activate, (b) sizing shifts — big bets for value/protection become correct. Board interacts with range in a compound way unlike SPR (hand groups only) or range (frequency only). Each board type needs separate analysis.",
+    "interval": 1,
+    "next_review": "2026-05-05",
+    "history": [
+      { "date": "2026-05-04", "result": "partial", "question_type": "application" }
+    ]
+  },
+  "poker/study-method-001": {
+    "id": "poker/study-method-001",
+    "title": "Study Methodology — Priority: High-Freq + Big Pot Spots First",
+    "category": "poker-knowledge",
+    "source": "wiki/frameworks/poker-study-methodology.md",
+    "questions": {
+      "application": "You have time to study one spot this week: 4BP OOP PFR or SRP IP PFR BUvBB. Which do you pick first and why? Apply Wakko's four priority criteria.",
+      "why": "Why does frequency rank above pot size in study priority? What would happen to your win rate if you studied rare-but-high-EV spots first?",
+      "recall": "List Wakko's four study priority criteria in order for 6-max cash."
+    },
+    "answer": "Study priority order: (1) High-frequency spots, (2) Big average pot size, (3) Your current leaks, (4) Population leaks. Top priority 6-max: SRP IP PFR (BUvBB, COvBB) — highest win-rate contributor, most frequent, pool leaks in defense. Then: 3BP OOP PFR (large pot), SRP OOP PFC (mirror). 4BP = Priority 2 — less frequent, so simplify (one gameplan vs per-texture splits). High frequency wins over high EV/hand because frequency × EV/hand = total EV.",
+    "interval": 1,
+    "next_review": "2026-05-05",
+    "history": [
+      { "date": "2026-05-04", "result": "partial", "question_type": "application" }
+    ]
+  },
+  "poker/study-method-002": {
+    "id": "poker/study-method-002",
+    "title": "Study Methodology — Ripple Effect: River Leaks Justify Earlier-Street Adjustments",
+    "category": "poker-knowledge",
+    "source": "wiki/frameworks/poker-study-methodology.md",
+    "questions": {
+      "application": "You discover that on K65r, BB over-folds the river line XC→X→B33 (facing a river bet after checking twice). How does this single river leak change your flop strategy as IP? Describe the ripple backwards.",
+      "why": "Why do river leaks have implications for earlier streets? If you only adjust your river betting but not your flop/turn line to reach that river, what do you miss?",
+      "recall": "Define the Ripple Effect in poker study in one sentence."
+    },
+    "answer": "Ripple Effect: river leaks propagate backwards to justify earlier-street adjustments. Pool over-folds K65r river XC→X→B33 → IP gains by using Bet-small flop → Check turn → Bet river with air. This justifies adjusting the flop line (cbet small specifically to reach that profitable river). Start river analysis to identify the leak, then work backwards to flop/preflop. Without adjusting earlier streets, you miss the full EV of the river leak.",
+    "interval": 1,
+    "next_review": "2026-05-05",
+    "history": [
+      { "date": "2026-05-04", "result": "partial", "question_type": "application" }
+    ]
+  }
+}

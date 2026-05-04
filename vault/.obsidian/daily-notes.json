@@ -1,0 +1,5 @@
+{
+  "folder": "wiki/sessions",
+  "template": "templates/daily-session-log",
+  "format": "YYYY-MM-DD"
+}

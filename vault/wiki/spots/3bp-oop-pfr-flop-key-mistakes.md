@@ -10,7 +10,7 @@ aliases:
   - 3bet pot oop pfr flop errors
 created: 2026-04-30
 updated: 2026-04-30
-links_out: [concept/3bp-oop-pfr-strategy, tasks/3bp-oop-pfr-study-tasks, hand/20260502-3bp-sb-kqhh-tc9h7h]
+links_out: [concept/3bp-oop-pfr-strategy, tasks/3bp-oop-pfr-study-tasks, hand/20260502-3bp-sb-kqhh-tc9h7h, concept/3bp-ip-pfr-overpair-flush-blocker-vs-checkjam, hand/20260503-3bp-bb-vs-sb-aac-qc9c6h]
 ---
 
 # 3BP OOP PFR — Key Mistakes on the Flop & Turn
@@ -124,3 +124,5 @@ Summarized from Tony coaching session on [[concept/3bp-oop-pfr-strategy|3BP OOP 
 - [[concept/3bp-oop-pfr-strategy|3BP OOP PFR Strategy]] — the foundational strategy each mistake violates
 - [[tasks/3bp-oop-pfr-study-tasks|3BP OOP PFR Study Tasks]] — structured drills to fix each mistake category
 - [[hand/20260502-3bp-sb-kqhh-tc9h7h|Hand 2026-05-02 KhQh slow play]] — live example of correctly NOT fast-playing value (2nd nut flush, no protection needed; contrast with Mistake 2)
+- [[concept/3bp-ip-pfr-overpair-flush-blocker-vs-checkjam|Overpair + Flush Blocker vs Check-Jam in 3BP]] — related spot: when villain check-jams a draw-heavy flop, overpair + Ac blocker justifies a call (flip-side of Mistake 1: value that needs to get stacks in)
+- [[hand/20260503-3bp-bb-vs-sb-aac-qc9c6h|Hand 2026-05-03 AsAc vs Check-Jam]] — live example of equity call vs check-jam on Qc9c6h; correct call despite villain showing top pair

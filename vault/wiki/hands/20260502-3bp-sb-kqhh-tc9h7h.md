@@ -8,7 +8,7 @@ sources:
 aliases: [KhQh slow play flush, 3bp sb utg flush call, slow play second nut flush, villain no blocker bluff]
 created: 2026-05-02
 updated: 2026-05-02
-links_out: [concept/3bp-oop-pfr-strategy, spots/3bp-oop-pfr-flop-key-mistakes]
+links_out: [concept/3bp-oop-pfr-strategy, spots/3bp-oop-pfr-flop-key-mistakes, concept/3bp-ip-pfr-overpair-flush-blocker-vs-checkjam, hand/20260503-3bp-bb-vs-sb-aac-qc9c6h]
 ---
 
 ## Hand Overview
@@ -109,3 +109,7 @@ Hero has 2nd nut flush. Villain's jam for value requires a better flush (Ah + he
 | River | Call all-in | Yes | Clear call; villain had no blocker and ran pure air |
 
 **Overall:** Hero played the hand well. The slow play on the turn was the key decision — justified by not holding blockers to villain's value range.
+
+## See Also
+- [[concept/3bp-ip-pfr-overpair-flush-blocker-vs-checkjam|Overpair + Flush Blocker vs Check-Jam in 3BP]] — related blocker logic: hero holding the flush suit Ace improves equity vs a check-jam (flip-side: villain here lacking a blocker exposes the bluff)
+- [[hand/20260503-3bp-bb-vs-sb-aac-qc9c6h|Hand 2026-05-03 AsAc vs SB Check-Jam]] — contrast: AsAc with Ac blocker justifies calling a check-jam; villain's KsQs (no club blocker) mirrors the population leak here
